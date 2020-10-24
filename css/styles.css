@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Black.eot");
@@ -23,8 +24,16 @@
   font-family: "Lato";
   src: url("../fonts/Lato-Light.eot");
   src: url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Light.svg#Lato-Light") format("svg"), url("../fonts/Lato-Light.ttf") format("truetype"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?tmvnr9");
+  src: url("../fonts/icomoon.eot?tmvnr9#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?tmvnr9") format("truetype"), url("../fonts/icomoon.woff?tmvnr9") format("woff"), url("../fonts/icomoon.svg?tmvnr9#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 *, *::after, *::before {
   box-sizing: border-box;
@@ -63,6 +72,61 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bubble:before {
+  content: "";
+}
+.icon-bulb:before {
+  content: "";
+}
+.icon-heart:before {
+  content: "";
+}
+.icon-mail:before {
+  content: "";
+}
+.icon-marker:before {
+  content: "";
+}
+.icon-pen:before {
+  content: "";
+}
+.icon-phone:before {
+  content: "";
+}
+.icon-star:before {
+  content: "";
+}
+.icon-cellphone:before {
+  content: "";
+}
+.icon-facebook:before {
+  content: "";
+}
+.icon-google-plus:before {
+  content: "";
+}
+.icon-twitter:before {
+  content: "";
+}
+.icon-linkedin:before {
+  content: "";
 }
 
 /*# sourceMappingURL=styles.css.map */
