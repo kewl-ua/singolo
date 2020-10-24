@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Mixin library for general purposes */
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Black.eot");
@@ -74,7 +75,53 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-[class^=icon-], [class*=" icon-"] {
+/* General components */
+.footer-link-linkedin, .footer-link-google, .footer-link-twitter, .footer-link-facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Layout components */
+.footer {
+  background-color: #303441;
+}
+.footer-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+.footer-copyright {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #666d89;
+}
+.footer-copyright-link:hover {
+  color: #ffffff;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+}
+.footer-social {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.footer-social + .footer-social {
+  margin-left: 8px;
+}
+.footer-link-facebook {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -88,45 +135,79 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-bubble:before {
-  content: "";
-}
-.icon-bulb:before {
-  content: "";
-}
-.icon-heart:before {
-  content: "";
-}
-.icon-mail:before {
-  content: "";
-}
-.icon-marker:before {
-  content: "";
-}
-.icon-pen:before {
-  content: "";
-}
-.icon-phone:before {
-  content: "";
-}
-.icon-star:before {
-  content: "";
-}
-.icon-cellphone:before {
-  content: "";
-}
-.icon-facebook:before {
+.footer-link-facebook::before {
   content: "";
+  font-size: 1.4rem;
 }
-.icon-google-plus:before {
-  content: "";
+.footer-link-facebook:hover {
+  color: #303441;
+  background-color: #666d89;
 }
-.icon-twitter:before {
+.footer-link-twitter {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.footer-link-twitter::before {
   content: "";
+  font-size: 1.4rem;
 }
-.icon-linkedin:before {
+.footer-link-twitter:hover {
+  color: #303441;
+  background-color: #666d89;
+}
+.footer-link-google {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.footer-link-google::before {
+  content: "";
+  font-size: 1.4rem;
+}
+.footer-link-google:hover {
+  color: #303441;
+  background-color: #666d89;
+}
+.footer-link-linkedin {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.footer-link-linkedin::before {
   content: "";
+  font-size: 1.4rem;
+}
+.footer-link-linkedin:hover {
+  color: #303441;
+  background-color: #666d89;
 }
 
 /*# sourceMappingURL=styles.css.map */
