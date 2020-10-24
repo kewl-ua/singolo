@@ -5,4 +5,10 @@
 @import "base/reset";
 @import "base/tags";
 
-@import "components/_icon";
+/* General components */
+@import "components/icon";
+@import "components/title";
+@import "components/socials/main";
+
+/* Layout components */
+@import "components/footer/main";
