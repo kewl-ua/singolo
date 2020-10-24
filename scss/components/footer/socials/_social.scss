@@ -1,0 +1,3 @@
+@mixin footer-social() {
+    @include social-item($blue-color-1);
+}

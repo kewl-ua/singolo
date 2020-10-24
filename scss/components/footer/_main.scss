@@ -1,0 +1,32 @@
+@import "socials/main";
+@import "socials/social";
+@import "socials/link";
+@import "copyright/main";
+
+.footer {
+    background-color: $blue-color-2;
+
+    &-inner {
+        @include site-width;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 0;
+    }
+
+    &-copyright {
+        @include footer-copyright;
+    }
+
+    &-socials {
+        @include footer-socials;
+    }
+
+    &-social {
+        @include footer-social;
+    }
+
+    &-link {
+        @include footer-link;
+    }
+}
