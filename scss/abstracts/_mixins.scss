@@ -1,0 +1,30 @@
+/* Mixin library for general purposes */
+@mixin site-width($width: $global-site-width) {
+    max-width: $width;
+    margin: 0 auto;
+}
+
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+    @if $vendors {
+        @each $vendor in $vendors {
+            #{'-' + $vendor + '-' + $property}: #{$value};
+        }
+    }
+    #{$property}: #{$value};
+}
+
+@mixin font($size: $global-font-size, $weight: normal, $style: normal, $line-height: normal) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    line-height: $line-height;
+}
+
+@mixin box-shadow($top: 0, $left: 0, $blur: 4px, $color: transparent, $inset: false) {
+    @if $inset {
+        @include prefix(box-shadow, inset $top $left $blur $color);
+    }
+    @else {
+        @include prefix(box-shadow, $top $left $blur $color);
+    }
+}
