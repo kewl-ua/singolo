@@ -1,0 +1,17 @@
+@import "list";
+@import "item";
+@import "link";
+
+.testimonials {		
+	&-list {
+		@include testimonials-list;
+	}
+
+	&-item {
+		@include testimonials-item;
+	}
+
+	&-link {
+		@include testimonials-link;
+	}
+}
