@@ -1,14 +1,38 @@
-@import "list";
-@import "item";
+@import "testimonials";
+@import "testimonial";
+@import "image";
+@import "name";
+@import "info";
+@import "socials";
+@import "social";
 @import "link";
 
-.testimonials {		
-	&-list {
-		@include testimonials-list;
+.testimonials {
+	@include testimonials;
+	margin-top: 50px;
+}
+
+.testimonial {
+	@include testimonial;
+
+	&-image {
+		@include testimonials-image;
 	}
 
-	&-item {
-		@include testimonials-item;
+	&-name {
+		@include testimonials-name;
+	}
+
+	&-info {
+		@include testimonials-info;
+	}
+
+	&-socials {
+		@include testimonials-socials;
+	}
+
+	&-social {
+		@include testimonials-social;
 	}
 
 	&-link {

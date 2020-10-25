@@ -1,0 +1,4 @@
+@mixin testimonials-socials() {
+	@include social-list;
+	margin-top: 30px;
+}
