@@ -85,6 +85,54 @@ body {
 }
 
 /* Layout components */
+.header {
+  background: #303441;
+  color: #ffffff;
+  border-bottom: 6px solid #373b4a;
+}
+.header-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.header-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+}
+.header-logo::after {
+  content: "*";
+  color: #ee5052;
+}
+
+.nav-list {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+}
+.nav-item:hover, .nav-item.active {
+  color: #ee5052;
+}
+.nav-item:not(:last-child)::after {
+  content: "*";
+  display: inline-block;
+  width: 32px;
+  font-size: 0.5rem;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.2;
+}
+.nav-link {
+  text-transform: uppercase;
+}
+
 .footer {
   background-color: #303441;
 }
