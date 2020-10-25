@@ -5,5 +5,12 @@
 @import "base/reset";
 @import "base/tags";
 
-@import "components/_icon";
-@import "components/banner/_banner.scss";
+/* General components */
+@import "components/icon";
+@import "components/title";
+@import "components/socials/main";  
+
+/* Layout components */
+@import "components/header/main";
+@import "components/banner/banner.scss";
+@import "components/footer/main";

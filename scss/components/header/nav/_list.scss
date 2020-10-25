@@ -1,0 +1,4 @@
+@mixin nav-list() {
+    @include font(1.2rem, bold);
+    display: flex;
+}

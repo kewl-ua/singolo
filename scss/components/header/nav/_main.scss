@@ -1,0 +1,17 @@
+@import "list";
+@import "item";
+@import "link";
+
+.nav {
+    &-list {
+        @include nav-list;
+    }
+
+    &-item {
+        @include nav-item;
+    }
+
+    &-link {
+        @include nav-link;
+    }
+}

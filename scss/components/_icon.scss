@@ -1,4 +1,4 @@
-[class^="icon-"], [class*=" icon-"] {
+@mixin icon($symbol-code, $color, $size) {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: "icomoon" !important;
     speak: never;
@@ -7,62 +7,65 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    color: $blue-color-1;
+    color: $color;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &::before {
+        content: $symbol-code;
+        font-size: $size;
+    }
 }
 
-.icon {
-    &-bubble:before {
-        content: "\e900";
-    }
+@mixin icon-bubble($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e900", $color, $size);
+}
 
-    &-bulb:before {
-        content: "\e901";
-    }
+@mixin icon-bulb($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e901", $color, $size);
+}
 
-    &-heart:before {
-        content: "\e905";
-    }
+@mixin icon-cellphone($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e902", $color, $size);
+}
 
-    &-mail:before {
-        content: "\e907";
-    }
+@mixin icon-facebook($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e903", $color, $size);
+}
 
-    &-marker:before {
-        content: "\e908";
-    }
+@mixin icon-google($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e904", $color, $size);
+}
 
-    &-pen:before {
-        content: "\e909";
-    }
+@mixin icon-heart($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e905", $color, $size);
+}
 
-    &-phone:before {
-        content: "\e90a";
-    }
+@mixin icon-linkedin($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e906", $color, $size);
+}
 
-    &-star:before {
-        content: "\e90b";
-    }
+@mixin icon-mail($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e907", $color, $size);
+}
 
-    &-cellphone:before {
-        content: "\e902";
-    }
+@mixin icon-marker($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e908", $color, $size);
+}
 
-    &-facebook:before {
-        content: "\e903";
-    }
+@mixin icon-pen($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e909", $color, $size);
+}
 
-    &-google-plus:before {
-        content: "\e904";
-    }
+@mixin icon-phone($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e90a", $color, $size);
+}
 
-    &-twitter:before {
-        content: "\e90c";
-    }
+@mixin icon-star($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e90b", $color, $size);
+}
 
-    &-linkedin:before {
-        content: "\e906";
-    }
+@mixin icon-twitter($color: $blue-color-1, $size: $global-icon-size) {
+    @include icon("\e90c", $color, $size);
 }

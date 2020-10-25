@@ -1,0 +1,11 @@
+@mixin social-item($border-color: transparent) {
+    width: 32px;
+    height: 32px;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    overflow: hidden;
+
+    & + & {
+        margin-left: 8px;
+    }
+}

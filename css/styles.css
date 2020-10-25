@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Mixin library for general purposes */
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Black.eot");
@@ -78,7 +80,126 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+/* General components */
+.footer-link-facebook, .footer-link-twitter, .footer-link-google, .footer-link-linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Layout components */
+.header {
+  background: #303441;
+  color: #ffffff;
+  border-bottom: 6px solid #373b4a;
+}
+
+.header-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+}
+
+.header-logo::after {
+  content: "*";
+  color: #ee5052;
+}
+
+.nav-list {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: #ee5052;
+}
+
+.nav-item:not(:last-child)::after {
+  content: "*";
+  display: inline-block;
+  width: 32px;
+  font-size: .5rem;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.2;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.banner {
+  background: url(../img/phones-min.png) center no-repeat #eb5055;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  display: block;
+  padding-bottom: 58.3%;
+  width: 100%;
+}
+
+.footer {
+  background-color: #303441;
+}
+
+.footer-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.footer-copyright {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #666d89;
+}
+
+.footer-copyright-link:hover {
+  color: #ffffff;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+}
+
+.footer-social {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.footer-social + .footer-social {
+  margin-left: 8px;
+}
+
+.footer-link-facebook {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -93,66 +214,87 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bubble:before {
-  content: "\e900";
+.footer-link-facebook::before {
+  content: "";
+  font-size: 1.4rem;
 }
 
-.icon-bulb:before {
-  content: "\e901";
+.footer-link-facebook:hover {
+  color: #303441;
+  background-color: #666d89;
 }
 
-.icon-heart:before {
-  content: "\e905";
+.footer-link-twitter {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
-  content: "\e907";
+.footer-link-twitter::before {
+  content: "";
+  font-size: 1.4rem;
 }
 
-.icon-marker:before {
-  content: "\e908";
+.footer-link-twitter:hover {
+  color: #303441;
+  background-color: #666d89;
 }
 
-.icon-pen:before {
-  content: "\e909";
+.footer-link-google {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-phone:before {
-  content: "\e90a";
+.footer-link-google::before {
+  content: "";
+  font-size: 1.4rem;
 }
 
-.icon-star:before {
-  content: "\e90b";
+.footer-link-google:hover {
+  color: #303441;
+  background-color: #666d89;
 }
 
-.icon-cellphone:before {
-  content: "\e902";
+.footer-link-linkedin {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
-  content: "\e903";
+.footer-link-linkedin::before {
+  content: "";
+  font-size: 1.4rem;
 }
 
-.icon-google-plus:before {
-  content: "\e904";
-}
-
-.icon-twitter:before {
-  content: "\e90c";
-}
-
-.icon-linkedin:before {
-  content: "\e906";
-}
-
-.banner {
-  background: url(../img/phones-min.png) center no-repeat #eb5055;
-  position: relative;
-}
-
-.banner::before {
-  content: "";
-  display: block;
-  padding-bottom: 58.3%;
-  width: 100%;
+.footer-link-linkedin:hover {
+  color: #303441;
+  background-color: #666d89;
 }

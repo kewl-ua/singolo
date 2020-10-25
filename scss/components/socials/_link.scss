@@ -1,0 +1,33 @@
+%social-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin social-link($color: $blue-color, $font-size: inherit) {
+    &-facebook {
+        @extend %social-base;
+        @include icon-facebook($color, $font-size);
+        @content;
+    }
+
+    &-twitter {
+        @extend %social-base;
+        @include icon-twitter($color, $font-size);
+        @content;
+    }
+
+    &-google {
+        @extend %social-base;
+        @include icon-google($color, $font-size);
+        @content;
+    }
+
+    &-linkedin {
+        @extend %social-base;
+        @include icon-linkedin($color, $font-size);
+        @content;
+    }
+}

@@ -1,0 +1,8 @@
+@mixin footer-link() {
+    @include social-link($blue-color-1, 1.4rem) {
+        &:hover {
+            color: $blue-color-2;
+            background-color: $blue-color-1;
+        }
+    };
+}
