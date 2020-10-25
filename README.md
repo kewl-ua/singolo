@@ -286,6 +286,7 @@ url: (../fonts/Lato-Regulat.ttf)
 ### Слияние
 ## Pull requests
 Перед тем как создавать pull request зайдите в настройки репозитория
-![](http://i.piccy.info/i9/a2d34a8926a940618ecb10d3aa68b274/1603634140/66645/1402192/Snymok_ekrana_2020_10_25_v_15_59_04.png)
-и укажите мою почту в Default reviewers
+![](http://i.piccy.info/i9/1d94be21a42b5f63452e2a885824d5d3/1603634221/78992/1402192/Snymok_ekrana_2020_10_25_v_16_02_08.png)
+
+И укажите мою почту в Default reviewers
 ![](http://i.piccy.info/i9/4219a00b4f48db0a23012129130e92f5/1603634155/56888/1402192/61280Snymok_ekrana_2020_10_25_v_15_59_57.jpg)
