@@ -1,5 +1,5 @@
 .banner{
-	height: calc(100vh - 95px);
+	height: calc(100vh - 9.5rem);
 	width: 100%;
 	background: url(../img/phones-min.png) center no-repeat #eb5055;
 	position: relative;
@@ -8,7 +8,7 @@
 		display: block;
 		position: absolute;
 		bottom: 0;
-		height: 5px;
+		height: 0.5rem;
 		width: 100%;
 		background: #ea676b;
 	}
