@@ -1,0 +1,82 @@
+
+.contacts-container{
+  background: #eb5055;
+}
+.contacts-inner{
+    width: 940px;
+    margin: 0 auto;
+    padding: 68px 0;
+}
+.description{
+  margin-top: 68px;
+}
+.description-title{
+  font-size: 30px;
+  font-weight: 900;
+  color: #f0d8d9;
+}
+.page-description{
+  margin: 32px 0 49px;
+  font-size: 18px;
+  color: #f0d8d9;
+}
+.form-container{
+  display: flex;
+  flex-direction: 1 0 auto ;
+}
+.name  {
+  width: 619px;
+  height: 38px;
+  color: #f48c8f;
+}
+.mail {
+  width: 619px;
+  height: 38px;
+  color: #f48c8f;
+}
+.subject {
+  width: 619px;
+  height: 38px;
+  color: #f48c8f;
+}
+.describe{
+  height: 202px;
+  width: 620px;
+  color: #f48c8f;
+}
+.form{
+  width: 670px;
+}
+.inp {
+  margin: 0 0 16px;
+  border: 1px solid #ca4549;
+  border-radius: 5px;
+  background-color: #ca4549;
+  font-size: 0.75rem;
+}
+.contacts-title{
+  font-size: 1.8rem;
+  color: #f0d8d9;
+  margin-bottom: 18px;
+}
+.contacts-description{
+  color: #f0d8d9;
+  margin-bottom: 34px;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+.contacts{
+  margin-left: 20px;
+}
+.contact{
+  
+}
+.number-link{
+
+}
+input::placeholder{
+    color: $white-color-1;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: Lato, sans-serif;
+}
