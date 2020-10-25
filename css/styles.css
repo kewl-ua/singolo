@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Black.eot");
@@ -6,6 +5,7 @@
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Regular.eot");
@@ -13,6 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Bold.eot");
@@ -20,6 +21,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Light.eot");
@@ -27,6 +29,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?tmvnr9");
@@ -35,6 +38,7 @@
   font-style: normal;
   font-display: block;
 }
+
 *, *::after, *::before {
   box-sizing: border-box;
   /* TODO: implement with prefixes */
@@ -74,7 +78,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-[class^=icon-], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -90,43 +94,70 @@ body {
 }
 
 .icon-bubble:before {
-  content: "";
-}
-.icon-bulb:before {
-  content: "";
-}
-.icon-heart:before {
-  content: "";
-}
-.icon-mail:before {
-  content: "";
-}
-.icon-marker:before {
-  content: "";
-}
-.icon-pen:before {
-  content: "";
-}
-.icon-phone:before {
-  content: "";
-}
-.icon-star:before {
-  content: "";
-}
-.icon-cellphone:before {
-  content: "";
-}
-.icon-facebook:before {
-  content: "";
-}
-.icon-google-plus:before {
-  content: "";
-}
-.icon-twitter:before {
-  content: "";
-}
-.icon-linkedin:before {
-  content: "";
+  content: "\e900";
 }
 
-/*# sourceMappingURL=styles.css.map */
+.icon-bulb:before {
+  content: "\e901";
+}
+
+.icon-heart:before {
+  content: "\e905";
+}
+
+.icon-mail:before {
+  content: "\e907";
+}
+
+.icon-marker:before {
+  content: "\e908";
+}
+
+.icon-pen:before {
+  content: "\e909";
+}
+
+.icon-phone:before {
+  content: "\e90a";
+}
+
+.icon-star:before {
+  content: "\e90b";
+}
+
+.icon-cellphone:before {
+  content: "\e902";
+}
+
+.icon-facebook:before {
+  content: "\e903";
+}
+
+.icon-google-plus:before {
+  content: "\e904";
+}
+
+.icon-twitter:before {
+  content: "\e90c";
+}
+
+.icon-linkedin:before {
+  content: "\e906";
+}
+
+.banner {
+  height: calc(100vh - 95px);
+  width: 100%;
+  background: url(../img/phones-min.png) center no-repeat #eb5055;
+  position: relative;
+}
+
+.banner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background: #ea676b;
+}
