@@ -20,11 +20,11 @@
     line-height: $line-height;
 }
 
-@mixin box-shadow($top: 0, $left: 0, $blur: 4px, $color: transparent, $inset: false) {
+@mixin box-shadow($top: 0, $left: 0, $spread: 10px, $blur: 4px, $color: transparent, $inset: false) {
     @if $inset {
-        @include prefix(box-shadow, inset $top $left $blur $color);
+        @include prefix(box-shadow, inset $top $left $spread $blur $color);
     }
     @else {
-        @include prefix(box-shadow, $top $left $blur $color);
+        @include prefix(box-shadow, $top $left $spread $blur $color);
     }
 }

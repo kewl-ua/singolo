@@ -1,0 +1,8 @@
+@mixin testimonials-image() {
+	width: 100%;
+
+	&:hover {
+		@include box-shadow(0px, 0px, 8px, 8px, $grey-color-1);
+		@include prefix(transition, box-shadow 0.3s linear);
+	}
+}
