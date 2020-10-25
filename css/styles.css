@@ -146,18 +146,13 @@ body {
 }
 
 .banner {
-  height: calc(100vh - 9.5rem);
-  width: 100%;
   background: url(../img/phones-min.png) center no-repeat #eb5055;
   position: relative;
 }
 
-.banner:after {
+.banner::before {
   content: "";
   display: block;
-  position: absolute;
-  bottom: 0;
-  height: 0.5rem;
+  padding-bottom: 58.3%;
   width: 100%;
-  background: #ea676b;
 }
