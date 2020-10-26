@@ -37,6 +37,18 @@ url: (../../fonts/Lato-Regular.ttf)
 url: (../fonts/Lato-Regulat.ttf)
 ```
 
+## Комментарии
+### SCSS
+Используем **только** [многострочные](https://developer.mozilla.org/ru/docs/Web/CSS/%D0%A2%D0%B8%D1%85%D0%B8%D0%B9) (/* ... */) комментарии.
+```scss
+/* Every except of first */
+& + &::before {
+    content: "\00B7"; /* &middot; = · */
+    display: inline-flex;
+    ...
+}
+```
+
 ## HTML
 ### Именование классов
 Для именования классов используем [Kebab Case](https://techrocks.ru/2018/08/09/most-common-programming-case-types/).
