@@ -1,0 +1,144 @@
+.portfolio_list {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-left: -20px;
+	align-items: flex-start;
+	padding-top: 40px;
+
+	// CATEGORIES
+
+	.portfolio_button {
+		display: none;
+	}
+
+	.portfolio_button_label {
+		@include font(1.2rem, normal, normal, 1.4rem);
+		margin-right: 10px;
+		color: #666d89;
+		letter-spacing: -0.001rem;
+		padding: 3px 6px;
+		border: 0.063rem solid $blue-color-4;
+		border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+	}
+
+	.label_all {		
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
+
+	.label_web_design {
+		position: absolute;
+		top: 0;
+		left: 60px;
+	}
+
+	.label_graphic_design {
+		position: absolute;
+		top: 0;
+		left: 147px;
+	}
+
+	.label_atrwork {
+		position: absolute;
+		top: 0;
+		left: 250px;
+	}
+
+	@media only screen and (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
+		.label_all {		
+			left: 21px;
+		}
+
+		.label_web_design {
+			left: 55px;
+		}
+
+		.label_graphic_design {
+			left: 139px;
+		}
+
+		.label_atrwork {
+			left: 241px;
+		}
+	}
+
+	.portfolio_button_label::after {
+		color: $blue-color-1;
+		border: 0.063rem solid $blue-color-1;
+	}
+
+	.portfolio_button_label:hover {
+		color: $white-color-1;
+		border: 0.063rem solid $white-color-1;
+	}
+
+	#all:checked ~ .portfolio_item {
+		display: block;
+	}
+
+	#all:checked ~ .label_all {
+		color: $white-color-1;
+		border: 0.063rem solid $white-color-1;
+	}
+
+	#web_design:checked ~ .graphic_design, .atrwork{
+		display: none;
+	}
+
+	#web_design:checked ~ .web_design{
+		display: block;
+	}
+
+	#graphic_design:checked ~ .web_design, .atrwork {
+		display: none;
+	}
+
+	#graphic_design:checked ~ .graphic_design {
+		display: block;
+	}
+
+	#atrwork:checked ~ .web_design, .graphic_design {
+		display: none;
+	}
+
+	#atrwork:checked ~ .atrwork {
+		display: block;
+	}
+
+	.portfolio_item {
+		width: calc(100%/4 - 20px);
+		height: auto;
+		overflow: hidden;
+		margin: 0 0 20px 20px;
+
+		.portfolio_img {
+			width: 100%;
+			height: 100%;
+			transition: all 1s ease-out;
+		}
+
+		.portfolio_img:hover {
+		    transform: scale(1.3);
+		    transform-origin: center;
+		}
+	}
+
+	@media only screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+		
+		.portfolio_item {
+			width: calc(100%/2 - 20px);
+			height: auto;
+		}
+	}
+
+	@media only screen and (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
+        .portfolio_item {
+			width: 100%;
+			height: auto;
+		}
+    }
+}
+

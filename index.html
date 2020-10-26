@@ -39,57 +39,61 @@
 
         <main class="main">
             <div class="portfolio">
-                <h2 class="portfolio_title">Portfolio</h2>
-                <h4 class="portfolio_subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</h4>
-                <div class="portfolio_buttons">
-                    <input type="radio" id="radio1" name="button" value="all" class="portfolio_button">
-                    <label for="radio1" class="portfolio_button_label">All</label>
-                    <input type="radio" id="radio2" name="button"value="web_design" class="portfolio_button">
-                    <label for="radio2" class="portfolio_button_label">Web Design</label>
-                    <input type="radio" id="radio3" name="button" value="graphic_design" class="portfolio_button">
-                    <label for="radio3" class="portfolio_button_label">Graphic Design</label>
-                    <input type="radio" id="radio4" name="button" value="atrwork" class="portfolio_button">
-                    <label for="radio4" class="portfolio_button_label">Atrwork</label>
+                <div class="portfolio_inner">
+                    <h2 class="portfolio_title">Portfolio</h2>
+                    <h4 class="portfolio_subtitle">
+                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                    </h4>
+                    <div class="portfolio_list">
+                        <input type="radio" id="all" name="button" value="all" class="portfolio_button" checked>
+                        <input type="radio" id="web_design" name="button" value="web_design" class="portfolio_button">
+                        <input type="radio" id="graphic_design" name="button" value="graphic_design" 
+                            class="portfolio_button">
+                        <input type="radio" id="atrwork" name="button" value="atrwork" class="portfolio_button">
+                        <label for="all" class="portfolio_button_label label_all active">All</label>
+                        <label for="web_design" class="portfolio_button_label label_web_design">Web Design</label>
+                        <label for="graphic_design" class="portfolio_button_label label_graphic_design">
+                            Graphic Design</label>
+                        <label for="atrwork" class="portfolio_button_label label_atrwork">Atrwork</label>
+                        <div class="portfolio_item web_design">
+                            <img src="images/portfolio_1.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item web_design">
+                            <img src="images/portfolio_2.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item web_design">
+                            <img src="images/portfolio_3.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item web_design">
+                            <img src="images/portfolio_4.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item graphic_design">
+                            <img src="images/portfolio_5.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item graphic_design">
+                            <img src="images/portfolio_6.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item graphic_design">
+                            <img src="images/portfolio_7.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item graphic_design">
+                            <img src="images/portfolio_8.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item atrwork">
+                            <img src="images/portfolio_9.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item atrwork">
+                            <img src="images/portfolio_10.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item atrwork">
+                            <img src="images/portfolio_11.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                        <div class="portfolio_item atrwork">
+                            <img src="images/portfolio_12.png" alt="portfolio example" class="portfolio_img">
+                        </div>
+                    </div>
                 </div>
-                <ul class="portfolio_list">
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_1.png" alt="portfolio example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_2.png" alt="portfolio example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_3.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_4.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_5.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_6.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_7.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_8.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_9.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_10.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_11.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="images/portfolio_12.png" alt="portfolio_example" class="portfolio_img">
-                    </li>
-                </ul>
-            </div>
+            </div>    
         </main>
 
         <footer class="footer">
