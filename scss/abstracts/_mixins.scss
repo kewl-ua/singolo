@@ -2,6 +2,11 @@
 @mixin site-width($width: $global-site-width) {
     max-width: $width;
     margin: 0 auto;
+
+    @include respond-to(devices) {
+        padding-left: $global-mobile-padding;
+        padding-right: $global-mobile-padding;
+    }
 }
 
 @mixin prefix($property, $value, $vendors: webkit moz ms o) {
