@@ -1,0 +1,12 @@
+@mixin feedback-input() {
+    width: 620px;
+    background-color: $red-color-2;
+
+    &:focus {
+        border-color: $white-color-3;
+    }
+
+    & + & {
+        margin-top:  18px;
+    }
+}
