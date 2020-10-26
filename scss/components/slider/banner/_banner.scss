@@ -1,6 +1,8 @@
 .banner{
 	background: url(../img/phones-min.png) center no-repeat #eb5055;
 	position: relative;
+	border-bottom: 5px solid #ea676b;
+	background-size: 80%;
 	&::before{
 		content: "";
 		display: block;

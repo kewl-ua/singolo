@@ -1,0 +1,14 @@
+.services{
+    background: $white-color-2;
+    border-bottom: 5px solid $white-color-1;
+    color: $blue-color-1;
+    padding: 65px 0;
+
+    &-content{
+        @include site-width;
+    }
+
+}
+
+@import "header/header";
+@import "items/items";
