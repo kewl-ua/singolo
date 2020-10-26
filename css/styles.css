@@ -211,11 +211,11 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
-.testimonial-social + .testimonial-social {
-  margin-left: 8px;
-}
 .testimonial-social:hover {
   border-width: 2px;
+}
+.testimonial-social + .testimonial-social {
+  margin-left: 8px;
 }
 .testimonial-link-facebook::before {
   content: "";
@@ -307,6 +307,9 @@ body {
   border-radius: 50%;
   overflow: hidden;
 }
+.footer-social:hover {
+  border-width: 2px;
+}
 .footer-social + .footer-social {
   margin-left: 8px;
 }
@@ -324,10 +327,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.footer-link-facebook:hover {
-  color: #303441;
-  background-color: #666d89;
-}
 .footer-link-twitter::before {
   content: "";
   font-size: 1.4rem;
@@ -341,10 +340,6 @@ body {
   color: #666d89;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.footer-link-twitter:hover {
-  color: #303441;
-  background-color: #666d89;
 }
 .footer-link-google::before {
   content: "";
@@ -360,10 +355,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.footer-link-google:hover {
-  color: #303441;
-  background-color: #666d89;
-}
 .footer-link-linkedin::before {
   content: "";
   font-size: 1.4rem;
@@ -377,10 +368,6 @@ body {
   color: #666d89;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.footer-link-linkedin:hover {
-  color: #303441;
-  background-color: #666d89;
 }
 
 /*# sourceMappingURL=styles.css.map */
