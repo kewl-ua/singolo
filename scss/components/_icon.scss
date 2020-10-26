@@ -1,20 +1,19 @@
 @mixin icon($symbol-code, $color, $size) {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "icomoon" !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    color: $color;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
     &::before {
         content: $symbol-code;
         font-size: $size;
+        font-family: "icomoon" !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        color: $color;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 }
 

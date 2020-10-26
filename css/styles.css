@@ -116,16 +116,20 @@ body {
   line-height: normal;
   display: flex;
 }
+.nav-item {
+  display: inline-flex;
+}
 .nav-item:hover, .nav-item.active {
   color: #ee5052;
 }
-.nav-item:not(:last-child)::after {
-  content: "*";
-  display: inline-block;
+.nav-item + .nav-item::before {
+  content: "·";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
-  font-size: 0.5rem;
-  vertical-align: middle;
-  text-align: center;
+  vertical-align: top;
+  font-size: 1rem;
   color: #ffffff;
   opacity: 0.2;
 }
@@ -218,24 +222,10 @@ body {
 }
 .testimonial-link-facebook {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  color: #666d89;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .testimonial-link-facebook::before {
   content: "";
   font-size: 1.4rem;
-}
-.testimonial-link-twitter {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -247,13 +237,13 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.testimonial-link-twitter {
+  /* use !important to prevent issues with browser extensions that change fonts */
 }
 .testimonial-link-twitter::before {
   content: "";
   font-size: 1.4rem;
-}
-.testimonial-link-google {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -265,13 +255,13 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.testimonial-link-google {
+  /* use !important to prevent issues with browser extensions that change fonts */
 }
 .testimonial-link-google::before {
   content: "";
   font-size: 1.4rem;
-}
-.testimonial-link-linkedin {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -284,9 +274,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.testimonial-link-linkedin {
+  /* use !important to prevent issues with browser extensions that change fonts */
+}
 .testimonial-link-linkedin::before {
   content: "";
   font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer {
@@ -327,6 +331,10 @@ body {
 }
 .footer-link-facebook {
   /* use !important to prevent issues with browser extensions that change fonts */
+}
+.footer-link-facebook::before {
+  content: "";
+  font-size: 1.4rem;
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -338,10 +346,6 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.footer-link-facebook::before {
-  content: "";
-  font-size: 1.4rem;
 }
 .footer-link-facebook:hover {
   color: #303441;
@@ -349,6 +353,10 @@ body {
 }
 .footer-link-twitter {
   /* use !important to prevent issues with browser extensions that change fonts */
+}
+.footer-link-twitter::before {
+  content: "";
+  font-size: 1.4rem;
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -360,10 +368,6 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.footer-link-twitter::before {
-  content: "";
-  font-size: 1.4rem;
 }
 .footer-link-twitter:hover {
   color: #303441;
@@ -371,6 +375,10 @@ body {
 }
 .footer-link-google {
   /* use !important to prevent issues with browser extensions that change fonts */
+}
+.footer-link-google::before {
+  content: "";
+  font-size: 1.4rem;
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -382,10 +390,6 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.footer-link-google::before {
-  content: "";
-  font-size: 1.4rem;
 }
 .footer-link-google:hover {
   color: #303441;
@@ -393,6 +397,10 @@ body {
 }
 .footer-link-linkedin {
   /* use !important to prevent issues with browser extensions that change fonts */
+}
+.footer-link-linkedin::before {
+  content: "";
+  font-size: 1.4rem;
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -404,10 +412,6 @@ body {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.footer-link-linkedin::before {
-  content: "";
-  font-size: 1.4rem;
 }
 .footer-link-linkedin:hover {
   color: #303441;

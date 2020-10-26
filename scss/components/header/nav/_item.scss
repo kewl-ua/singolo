@@ -1,17 +1,20 @@
 @mixin nav-item() {
+    display: inline-flex;
+
     &:hover,
     &.active {
         color: $red-color-1;
     }
 
-    &:not(:last-child)::after {
-        content: "*";
-        display: inline-block;
+    & + &::before {
+        content: "\00B7"; // &middot; = ·
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         width: 32px;
-        font-size: .5rem;
-        vertical-align: middle;
-        text-align: center;
+        vertical-align: top;
+        font-size: 1rem;
         color: $white-color-1;
-        opacity: 0.2;
+        opacity: 0.2
     }
 }
