@@ -199,6 +199,51 @@ body {
   font-weight: 300;
 }
 
+.services-header {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .services-header {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-header {
+    font-size: 3.5rem;
+  }
+}
+.services-description {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .services-description {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-description {
+    font-size: 2.3rem;
+  }
+}
+
 .services-list {
   display: flex;
   flex-flow: row wrap;
@@ -207,7 +252,6 @@ body {
   width: 33.33333%;
   padding-left: 95px;
   margin-top: 40px;
-  font-family: "Lato", sans-serif;
   position: relative;
 }
 .services-item-bubble::before {
@@ -350,6 +394,215 @@ body {
 .services-descriptions {
   font-size: 1.2rem;
   line-height: 2rem;
+  hyphens: auto;
+}
+
+.services-item {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .services-item {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-item {
+    width: 100%;
+    padding-left: 100px;
+  }
+}
+.services-item-bubble {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-item-bubble::before {
+    content: "";
+    font-size: 3.9rem;
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #666d89;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.services-item-bulb {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-item-bulb::before {
+    content: "";
+    font-size: 3.9rem;
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #666d89;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.services-item-heart {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-item-heart::before {
+    content: "";
+    font-size: 3.9rem;
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #666d89;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.services-item-pen {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-item-pen::before {
+    content: "";
+    font-size: 3.9rem;
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #666d89;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.services-item-phone {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-item-phone::before {
+    content: "";
+    font-size: 3.9rem;
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #666d89;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.services-item-star {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-item-star::before {
+    content: "";
+    font-size: 3.9rem;
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #666d89;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.services-title {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .services-title {
+    font-size: 2rem;
+    /* 320px - 480px */
+    /* 480px - 767 px */
+    /* 320px - 767 px */
+    /* 768px - 1019px */
+    /* 320px - 1019px */
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 939px) and (min-width: 320px) and (max-width: 479px) {
+  .services-title {
+    font-size: 2.3rem;
+  }
+}
+.services-descriptions {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .services-descriptions {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .services-descriptions {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
 }
 
 .about {
