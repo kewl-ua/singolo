@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-@mixin social-link($color: $blue-color-1, $font-size: inherit) {
+@mixin social-link($color, $font-size) {
     &-facebook {
         @extend %social-base;
         @include icon-facebook($color, $font-size);
