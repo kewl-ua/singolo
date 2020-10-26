@@ -39,7 +39,7 @@
 
     /* 480px - 767 px */
     @if $device == mobile-landscape {
-        @media only screen and (min-width: $mobile-landsacpe) and (max-width: $tablet-portrait - 1) {
+        @media only screen and (min-width: $mobile-landscape) and (max-width: $tablet-portrait - 1) {
             @content;
         }
     }
