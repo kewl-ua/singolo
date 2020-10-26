@@ -1,7 +1,3 @@
 @mixin testimonials-social() {
 	@include social-item($blue-color-1);
-
-	&:hover {
-		border-width: 2px;
-	}
 }

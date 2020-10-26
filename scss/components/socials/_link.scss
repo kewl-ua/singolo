@@ -6,28 +6,24 @@
     width: 100%;
 }
 
-@mixin social-link($color: $blue-color-1, $font-size: inherit) {
+@mixin social-link($color, $font-size) {
     &-facebook {
         @extend %social-base;
         @include icon-facebook($color, $font-size);
-        @content;
     }
 
     &-twitter {
         @extend %social-base;
         @include icon-twitter($color, $font-size);
-        @content;
     }
 
     &-google {
         @extend %social-base;
         @include icon-google($color, $font-size);
-        @content;
     }
 
     &-linkedin {
         @extend %social-base;
         @include icon-linkedin($color, $font-size);
-        @content;
     }
 }
