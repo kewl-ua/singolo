@@ -18,54 +18,54 @@
     }
 }
 
-@mixin icon-bubble($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-bubble($color, $size) {
     @include icon("\e900", $color, $size);
 }
 
-@mixin icon-bulb($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-bulb($color, $size) {
     @include icon("\e901", $color, $size);
 }
 
-@mixin icon-cellphone($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-cellphone($color, $size) {
     @include icon("\e902", $color, $size);
 }
 
-@mixin icon-facebook($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-facebook($color, $size) {
     @include icon("\e903", $color, $size);
 }
 
-@mixin icon-google($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-google($color, $size) {
     @include icon("\e904", $color, $size);
 }
 
-@mixin icon-heart($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-heart($color, $size) {
     @include icon("\e905", $color, $size);
 }
 
-@mixin icon-linkedin($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-linkedin($color, $size) {
     @include icon("\e906", $color, $size);
 }
 
-@mixin icon-mail($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-mail($color, $size) {
     @include icon("\e907", $color, $size);
 }
 
-@mixin icon-marker($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-marker($color, $size) {
     @include icon("\e908", $color, $size);
 }
 
-@mixin icon-pen($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-pen($color, $size) {
     @include icon("\e909", $color, $size);
 }
 
-@mixin icon-phone($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-phone($color, $size) {
     @include icon("\e90a", $color, $size);
 }
 
-@mixin icon-star($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-star($color, $size) {
     @include icon("\e90b", $color, $size);
 }
 
-@mixin icon-twitter($color: $blue-color-1, $size: $global-icon-size) {
+@mixin icon-twitter($color, $size) {
     @include icon("\e90c", $color, $size);
 }
