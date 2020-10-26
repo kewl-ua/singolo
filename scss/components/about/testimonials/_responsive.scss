@@ -1,0 +1,25 @@
+@import "testimonials/responsive";
+@import "testimonial/responsive";
+@import "name/responsive";
+@import "info/responsive";
+@import "socials/responsive";
+
+.testimonials {
+	@include testimonials-responsive;
+}
+
+.testimonial {
+	@include testimonial-responsive;
+
+	&-name {
+		@include testimonials-name-responsive;
+	}
+
+	&-info {
+		@include testimonials-info-responsive;
+	}
+
+	&-socials {
+		@include testimonials-socials-responsive;
+	}
+}

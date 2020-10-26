@@ -1,0 +1,10 @@
+@mixin testimonial-responsive() {
+	@include respond-to(mobiles) {
+		width: 100%;
+		align-items: center;
+	}
+
+	& + & {
+		margin-top: 20px;
+	}
+}
