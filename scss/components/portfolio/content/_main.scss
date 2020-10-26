@@ -2,7 +2,7 @@
 	background-color: $blue-color-2;
 	border-bottom: 6px solid $blue-color-3;
 
-	&_inner {
+	&-inner {
 		@include site-width;
 		padding: 60px 0 53px;
 
