@@ -117,7 +117,7 @@
 		.portfolio_img {
 			width: 100%;
 			height: 100%;
-			transition: all 1s ease-out;
+			@include prefix(transition, all 1s ease-out);
 		}
 
 		.portfolio_img:hover {

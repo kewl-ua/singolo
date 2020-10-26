@@ -87,7 +87,7 @@ body {
 }
 
 /* General components */
-.footer-link-facebook, .footer-link-twitter, .footer-link-google, .footer-link-linkedin {
+.testimonial-link-facebook, .testimonial-link-twitter, .testimonial-link-google, .testimonial-link-linkedin, .footer-link-facebook, .footer-link-twitter, .footer-link-google, .footer-link-linkedin {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,23 +143,28 @@ body {
   display: flex;
 }
 
-.nav-item:hover, .nav-item.active {
-  color: #ee5052;
+.nav-item {
+  display: inline-flex;
 }
 
-.nav-item:not(:last-child)::after {
-  content: "*";
-  display: inline-block;
+.nav-item + .nav-item::before {
+  content: "\00B7";
+  /* &middot; = · */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
-  font-size: .5rem;
-  vertical-align: middle;
-  text-align: center;
+  font-size: 1rem;
   color: #ffffff;
   opacity: 0.2;
 }
 
 .nav-link {
   text-transform: uppercase;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #ee5052;
 }
 
 .portfolio {
@@ -352,6 +357,10 @@ body {
 .portfolio_list .portfolio_item .portfolio_img {
   width: 100%;
   height: 100%;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
 
@@ -372,6 +381,170 @@ body {
     width: 100%;
     height: auto;
   }
+}
+
+.about {
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+  padding: 64px 0;
+}
+
+.about-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 939px) {
+  .about-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
+  color: #666d89;
+}
+
+.about-description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  color: #767e9e;
+  margin-top: 25px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.testimonial {
+  width: calc((100% - 40px) / 3);
+}
+
+.testimonial-image {
+  width: 100%;
+}
+
+.testimonial-image:hover {
+  -webkit-box-shadow: 0px 0px 8px 8px #c5c5c5;
+  -moz-box-shadow: 0px 0px 8px 8px #c5c5c5;
+  -ms-box-shadow: 0px 0px 8px 8px #c5c5c5;
+  -o-box-shadow: 0px 0px 8px 8px #c5c5c5;
+  box-shadow: 0px 0px 8px 8px #c5c5c5;
+  -webkit-transition: box-shadow 0.3s linear;
+  -moz-transition: box-shadow 0.3s linear;
+  -ms-transition: box-shadow 0.3s linear;
+  -o-transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear;
+}
+
+.testimonial-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
+  color: #666d89;
+  padding: 20px 0;
+}
+
+.testimonial-info {
+  font-size: 1.2rem;
+  color: #767e9e;
+}
+
+.testimonial-socials {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  margin-top: 30px;
+}
+
+.testimonial-social {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-social:hover {
+  border-width: 2px;
+}
+
+.testimonial-social + .testimonial-social {
+  margin-left: 8px;
+}
+
+.testimonial-link-facebook::before {
+  content: "";
+  font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.testimonial-link-twitter::before {
+  content: "";
+  font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.testimonial-link-google::before {
+  content: "";
+  font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.testimonial-link-linkedin::before {
+  content: "";
+  font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer {
@@ -425,37 +598,17 @@ body {
   overflow: hidden;
 }
 
-.footer-social + .footer-social {
-  margin-left: 8px;
+.footer-social:hover {
+  border-width: 2px;
 }
 
-.footer-link-facebook {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  color: #666d89;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.footer-social + .footer-social {
+  margin-left: 8px;
 }
 
 .footer-link-facebook::before {
   content: "";
   font-size: 1.4rem;
-}
-
-.footer-link-facebook:hover {
-  color: #303441;
-  background-color: #666d89;
-}
-
-.footer-link-twitter {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -464,7 +617,6 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -472,15 +624,6 @@ body {
 .footer-link-twitter::before {
   content: "";
   font-size: 1.4rem;
-}
-
-.footer-link-twitter:hover {
-  color: #303441;
-  background-color: #666d89;
-}
-
-.footer-link-google {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -489,7 +632,6 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -497,15 +639,6 @@ body {
 .footer-link-google::before {
   content: "";
   font-size: 1.4rem;
-}
-
-.footer-link-google:hover {
-  color: #303441;
-  background-color: #666d89;
-}
-
-.footer-link-linkedin {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -514,7 +647,6 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -522,9 +654,14 @@ body {
 .footer-link-linkedin::before {
   content: "";
   font-size: 1.4rem;
-}
-
-.footer-link-linkedin:hover {
-  color: #303441;
-  background-color: #666d89;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

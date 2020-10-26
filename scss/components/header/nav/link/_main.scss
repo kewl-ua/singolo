@@ -1,0 +1,8 @@
+@mixin nav-link {
+    text-transform: uppercase;
+
+    &:hover,
+    &.active {
+        color: $red-color-1;
+    }
+}

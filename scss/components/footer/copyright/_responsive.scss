@@ -1,0 +1,5 @@
+@mixin copyright-responsive() {
+    @include respond-to(mobiles) {
+        margin-top: 20px;
+    }
+}
