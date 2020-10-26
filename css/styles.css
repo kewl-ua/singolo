@@ -119,9 +119,6 @@ body {
 .nav-item {
   display: inline-flex;
 }
-.nav-item:hover, .nav-item.active {
-  color: #ee5052;
-}
 .nav-item + .nav-item::before {
   content: "·";
   display: inline-flex;

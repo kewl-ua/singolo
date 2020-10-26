@@ -1,11 +1,6 @@
 @mixin nav-item() {
     display: inline-flex;
 
-    &:hover,
-    &.active {
-        color: $red-color-1;
-    }
-
     & + &::before {
         content: "\00B7"; // &middot; = ·
         display: inline-flex;
