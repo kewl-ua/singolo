@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/* Globals */
+/* Colors */
+/* Media */
+/* Vertically oriented phone */
+/* Horizontally oriented phone */
+/* Vertically oritented tablet */
 /* Mixin library for general purposes */
 @font-face {
   font-family: "Lato";
@@ -81,7 +87,7 @@ textarea {
 }
 
 /* General components */
-.footer-link-linkedin, .footer-link-google, .footer-link-twitter, .footer-link-facebook {
+.footer-link-linkedin, .footer-link-google, .footer-link-twitter, .footer-link-facebook, .testimonial-link-linkedin, .testimonial-link-google, .testimonial-link-twitter, .testimonial-link-facebook {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,10 +104,21 @@ textarea {
 .header-inner {
   max-width: 940px;
   margin: 0 auto;
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 939px) {
+  .header-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .header-logo {
   font-size: 2.5rem;
@@ -121,21 +138,173 @@ textarea {
   line-height: normal;
   display: flex;
 }
-.nav-item:hover, .nav-item.active {
-  color: #ee5052;
+.nav-item {
+  display: inline-flex;
 }
-.nav-item:not(:last-child)::after {
-  content: "*";
-  display: inline-block;
+.nav-item + .nav-item::before {
+  content: "·";
+  /* &middot; = · */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
-  font-size: 0.5rem;
-  vertical-align: middle;
-  text-align: center;
+  font-size: 1rem;
   color: #ffffff;
   opacity: 0.2;
 }
 .nav-link {
   text-transform: uppercase;
+}
+.nav-link:hover, .nav-link.active {
+  color: #ee5052;
+}
+
+.about {
+  background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
+  padding: 64px 0;
+}
+.about-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 939px) {
+  .about-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.about-title {
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
+  color: #666d89;
+}
+.about-description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: normal;
+  color: #767e9e;
+  margin-top: 25px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.testimonial {
+  width: calc((100% - 40px) / 3);
+}
+.testimonial-image {
+  width: 100%;
+}
+.testimonial-image:hover {
+  -webkit-box-shadow: 0px 0px 8px 8px #c5c5c5;
+  -moz-box-shadow: 0px 0px 8px 8px #c5c5c5;
+  -ms-box-shadow: 0px 0px 8px 8px #c5c5c5;
+  -o-box-shadow: 0px 0px 8px 8px #c5c5c5;
+  box-shadow: 0px 0px 8px 8px #c5c5c5;
+  -webkit-transition: box-shadow 0.3s linear;
+  -moz-transition: box-shadow 0.3s linear;
+  -ms-transition: box-shadow 0.3s linear;
+  -o-transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear;
+}
+.testimonial-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
+  color: #666d89;
+  padding: 20px 0;
+}
+.testimonial-info {
+  font-size: 1.2rem;
+  color: #767e9e;
+}
+.testimonial-socials {
+  display: flex;
+  align-items: center;
+  font-size: 0;
+  margin-top: 30px;
+}
+.testimonial-social {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonial-social:hover {
+  border-width: 2px;
+}
+.testimonial-social + .testimonial-social {
+  margin-left: 8px;
+}
+.testimonial-link-facebook::before {
+  content: "";
+  font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.testimonial-link-twitter::before {
+  content: "";
+  font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.testimonial-link-google::before {
+  content: "";
+  font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.testimonial-link-linkedin::before {
+  content: "";
+  font-size: 1.4rem;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 input,
@@ -256,10 +425,21 @@ textarea::placeholder {
 .footer-inner {
   max-width: 940px;
   margin: 0 auto;
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 939px) {
+  .footer-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .footer-copyright {
   font-size: 1.2rem;
@@ -283,33 +463,15 @@ textarea::placeholder {
   border-radius: 50%;
   overflow: hidden;
 }
+.footer-social:hover {
+  border-width: 2px;
+}
 .footer-social + .footer-social {
   margin-left: 8px;
-}
-.footer-link-facebook {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  color: #666d89;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 .footer-link-facebook::before {
   content: "";
   font-size: 1.4rem;
-}
-.footer-link-facebook:hover {
-  color: #303441;
-  background-color: #666d89;
-}
-.footer-link-twitter {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -318,20 +480,12 @@ textarea::placeholder {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .footer-link-twitter::before {
   content: "";
   font-size: 1.4rem;
-}
-.footer-link-twitter:hover {
-  color: #303441;
-  background-color: #666d89;
-}
-.footer-link-google {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -340,20 +494,12 @@ textarea::placeholder {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .footer-link-google::before {
   content: "";
   font-size: 1.4rem;
-}
-.footer-link-google:hover {
-  color: #303441;
-  background-color: #666d89;
-}
-.footer-link-linkedin {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -362,17 +508,22 @@ textarea::placeholder {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .footer-link-linkedin::before {
   content: "";
   font-size: 1.4rem;
-}
-.footer-link-linkedin:hover {
-  color: #303441;
-  background-color: #666d89;
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*# sourceMappingURL=styles.css.map */

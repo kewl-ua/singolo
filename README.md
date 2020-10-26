@@ -37,6 +37,18 @@ url: (../../fonts/Lato-Regular.ttf)
 url: (../fonts/Lato-Regulat.ttf)
 ```
 
+## Комментарии
+### SASS
+Используем **только** [многострочные](https://developer.mozilla.org/ru/docs/Web/CSS/%D0%A2%D0%B8%D1%85%D0%B8%D0%B9) комментарии.
+```scss
+/* Every except of first */
+& + &::before {
+    content: "\00B7"; /* &middot; = · */
+    display: inline-flex;
+    ...
+}
+```
+
 ## HTML
 ### Именование классов
 Для именования классов используем [Kebab Case](https://techrocks.ru/2018/08/09/most-common-programming-case-types/).
@@ -105,15 +117,15 @@ url: (../fonts/Lato-Regulat.ttf)
 ...
 ```
 После имени класса следует:
-1. пробел
-1. фигурная скобк
-1. перенос строки
-1. табуляция
-1. имя свойства - пробел - значение свойства - точка с запятой
+1.  пробел
+2.  фигурная скобк
+3.  перенос строки
+4.  табуляция
+5.  имя свойства - пробел - значение свойства - точка с запятой
 ...
-1. перенос на новую строку
-1. закрытие фигурной скобки
-1. перенос на новую строку
+6.  перенос на новую строку
+7.  закрытие фигурной скобки
+8.  перенос на новую строку
 
 В случае  нескольких селекторов с одинаковыми правилами, после каждого селектора ставится запятая и перенос строки:
 ```css
@@ -162,6 +174,10 @@ url: (../fonts/Lato-Regulat.ttf)
 
 ### Единицы измерения
 Для шрифтов испозьуем **только** rem. То есть свойства font-size и line-height должны иметь значение в rem'ах. Для всего остального допустимы любые другие единицы.
+Исключением является только vw/vh в случае если это стили для responsive. Например, чтобы не указывать множество медиа-брейкпоинтов, постоянно уменьшая шрифт можно просто написать:
+```scss
+font-size: 1.2vh;
+```
 
 ### Цвета
 Цвета записываем в hex-формате без сокращенйи. То есть вместо `#fff` пишем `#ffffff`.
@@ -200,28 +216,28 @@ url: (../fonts/Lato-Regulat.ttf)
 ### components
 В папке **components** хранятся стилики компонентов. Композитные компоненты выделяются в отдельные директории и разбиваются на составляющие.
 Простые компоненты описываются в одном файле. Зачастую это повторяющиеся встраиваемые компоненты, как например: иконки, заголовки, списки.
-- components
-    - header
-        - nav
-            - _item.scss
-            - _link.scss
-            - _list.scss
-            - _main.scss
-        - socials
-            - _list.scss
-            - _item.scss
-            - _link.scss
-            - _main.scss
-        - _main.scs
-    - banner
-        - ...
-        - ...
-    - portfolio
-        - ...
-        - ...
-    - _title.scss
-    - _icon.scss
-    - ...
+*   components
+    *   header
+        *   nav
+            *   _item.scss
+            *   _link.scss
+            *   _list.scss
+            *   _main.scss
+        *   socials
+            *   _list.scss
+            *   _item.scss
+            *   _link.scss
+            *   _main.scss
+        *   _main.scs
+    *   banner
+        *   ...
+        *   ...
+    *   portfolio
+        *   ...
+        *   ...
+    *   _title.scss
+    *   _icon.scss
+    *   ...
 
 ## SASS подход к написанию компонентов
 Каждую часть компонента реализовыаем как миксин, собирая все нужно в **файле-бандле**. Обычно, это _main.scss.
@@ -279,6 +295,83 @@ url: (../fonts/Lato-Regulat.ttf)
         @include portfolio-title();
     }
 }
+```
+
+## Медиа/Респонсив/Адаптив
+Для каждого компонента у которого будут медиа-стили, создаем рядом с главным (_main.scss) файлом `_responsive.scss`.
+В случае если это простой компонент (т.е. явлюящийся частью другого), то пишем для него миксин с соответствующим названием.
+`scss/components/footer/copyright/_responsive.scss`
+```scss
+@mixin copyright-responsive() {
+    @include respond-to(mobiles) {
+        margin-top: 20px;
+    }
+}
+```
+
+Если это составной компонент (тот, который включает в себя другие), то в таком случае выглядеть он будет по подобию `_main.scss` в таких компонентах.
+`scss/components/footer/_main.scss`
+```scss
+@import "socials/main";
+@import "copyright/main";
+
+.footer {
+    background-color: $blue-color-2;
+
+    &-inner {
+        @include site-width;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 0;
+    }
+
+    &-copyright {
+        @include footer-copyright;
+    }
+
+    ...
+}
+```
+
+`scss/components/footer/_responsive.scss`
+```scss
+@import "copyright/responsive";
+
+.footer {
+    &-inner {
+        @include respond-to(mobiles) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-copyright {
+        @include copyright-responsive;
+    }
+}
+```
+
+Не забываем подключить респонсив-часть компонента в отдельный банд для респонсива `scss/responsive.scss`.
+```scss
+/* Components */
+...
+@import "components/footer/responsive";
+```
+
+Медиа стили пишем только с помощью миксина `respond-to`:
+```scss
+@include respond-to(mobiles) {
+    font-size: 1.8vw;
+    margin-top: 20px;
+    ...
+}
+```
+
+Выглядит сложно, но это оправдано, так как таким образом мы получим отдельный скомпилированный CSS-файл только для респонсива (так как этот SASS-файл начинается без "_").
+Что позволить подключать файл с респонсив стилями только тогда, когда понадобится, а не со всеми другими стилями:
+`index.html`
+```HTML
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1279px)">
 ```
 
 Также, это сводит к минимум вероятность того, что разные участники будут править один и тот же файл, создавая конфликты при слиянии.

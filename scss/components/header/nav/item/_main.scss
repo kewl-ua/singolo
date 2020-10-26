@@ -1,0 +1,14 @@
+@mixin nav-item() {
+    display: inline-flex;
+
+    & + &::before {
+        content: "\00B7"; /* &middot; = · */
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        font-size: 1rem;
+        color: $white-color-1;
+        opacity: 0.2
+    }
+}
