@@ -1,5 +1,9 @@
-.services {
-	&-header {
+.service {
+	@include respond-to(mobile-portrait) {
+		text-align: center;
+	}
+	
+	&-title {
 		@include respond-to(tablet) {
 			font-size: 3.2rem;
 		}

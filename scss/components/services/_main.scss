@@ -1,10 +1,10 @@
-.services{
+.service {
     background: $white-color-2;
     border-bottom: 6px solid $white-color-1;
     color: $blue-color-1;
     padding: 65px 0;
 
-    &-content{
+    &-inner {
         @include site-width;
     }
 

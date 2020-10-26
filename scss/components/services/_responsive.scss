@@ -1,0 +1,7 @@
+.services {
+	&-inner {
+		@include respond-to(mobile-portrait){
+			
+		}
+	}
+}

@@ -167,13 +167,13 @@ body {
   width: 100%;
 }
 
-.services {
+.service {
   background: #f2f2f2;
   border-bottom: 6px solid #ffffff;
   color: #666d89;
   padding: 65px 0;
 }
-.services-content {
+.service-inner {
   max-width: 940px;
   margin: 0 auto;
   /* 320px - 480px */
@@ -183,23 +183,35 @@ body {
   /* 320px - 1019px */
 }
 @media only screen and (min-width: 320px) and (max-width: 939px) {
-  .services-content {
+  .service-inner {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-.services-header {
+.service-title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   padding-bottom: 35px;
 }
-.services-description {
+.service-description {
   font-size: 1.8rem;
   font-weight: 300;
 }
 
-.services-header {
+.service {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .service {
+    text-align: center;
+  }
+}
+.service-title {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
@@ -212,16 +224,16 @@ body {
   /* 320px - 1019px */
 }
 @media only screen and (min-width: 768px) and (max-width: 939px) {
-  .services-header {
+  .service-title {
     font-size: 3.2rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  .services-header {
+  .service-title {
     font-size: 3.5rem;
   }
 }
-.services-description {
+.service-description {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
@@ -234,12 +246,12 @@ body {
   /* 320px - 1019px */
 }
 @media only screen and (min-width: 768px) and (max-width: 939px) {
-  .services-description {
+  .service-description {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  .services-description {
+  .service-description {
     font-size: 2.3rem;
   }
 }
@@ -416,8 +428,10 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .services-item {
+    text-align: center;
     width: 100%;
-    padding-left: 100px;
+    padding-top: 100px;
+    padding-left: 0;
   }
 }
 .services-item-bubble {
@@ -430,7 +444,7 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .services-item-bubble::before {
     content: "";
-    font-size: 3.9rem;
+    font-size: 5rem;
     font-family: "icomoon" !important;
     speak: never;
     font-style: normal;
@@ -441,6 +455,10 @@ body {
     color: #666d89;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .services-item-bubble::before {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .services-item-bulb {
@@ -453,7 +471,7 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .services-item-bulb::before {
     content: "";
-    font-size: 3.9rem;
+    font-size: 5rem;
     font-family: "icomoon" !important;
     speak: never;
     font-style: normal;
@@ -464,6 +482,10 @@ body {
     color: #666d89;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .services-item-bulb::before {
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 .services-item-heart {
@@ -476,7 +498,7 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .services-item-heart::before {
     content: "";
-    font-size: 3.9rem;
+    font-size: 5rem;
     font-family: "icomoon" !important;
     speak: never;
     font-style: normal;
@@ -487,6 +509,10 @@ body {
     color: #666d89;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .services-item-heart::before {
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 .services-item-pen {
@@ -499,7 +525,7 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .services-item-pen::before {
     content: "";
-    font-size: 3.9rem;
+    font-size: 5rem;
     font-family: "icomoon" !important;
     speak: never;
     font-style: normal;
@@ -510,6 +536,10 @@ body {
     color: #666d89;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .services-item-pen::before {
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 .services-item-phone {
@@ -522,7 +552,7 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .services-item-phone::before {
     content: "";
-    font-size: 3.9rem;
+    font-size: 5rem;
     font-family: "icomoon" !important;
     speak: never;
     font-style: normal;
@@ -533,6 +563,10 @@ body {
     color: #666d89;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .services-item-phone::before {
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 .services-item-star {
@@ -545,7 +579,7 @@ body {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .services-item-star::before {
     content: "";
-    font-size: 3.9rem;
+    font-size: 5rem;
     font-family: "icomoon" !important;
     speak: never;
     font-style: normal;
@@ -556,6 +590,10 @@ body {
     color: #666d89;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .services-item-star::before {
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 .services-title {
@@ -577,7 +615,7 @@ body {
 }
 @media only screen and (min-width: 768px) and (max-width: 939px) and (min-width: 320px) and (max-width: 479px) {
   .services-title {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 }
 .services-descriptions {
@@ -600,7 +638,7 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .services-descriptions {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 2.8rem;
   }
 }
