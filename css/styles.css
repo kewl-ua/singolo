@@ -75,6 +75,11 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+input,
+textarea {
+  font-family: inherit;
+}
+
 /* General components */
 .footer-link-linkedin, .footer-link-google, .footer-link-twitter, .footer-link-facebook {
   display: flex;
@@ -133,14 +138,20 @@ body {
   text-transform: uppercase;
 }
 
+input,
+textarea {
+  font-family: inherit;
+}
+
 .contacts-container {
-  background: #eb5055;
+  background: #ea676b;
 }
 
 .contacts-inner {
   width: 940px;
   margin: 0 auto;
   padding: 68px 0;
+  /* TODO: clarify */
 }
 
 .description {
@@ -148,67 +159,60 @@ body {
 }
 
 .description-title {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 900;
+  font-style: normal;
+  line-height: normal;
   color: #f0d8d9;
 }
 
 .page-description {
   margin: 32px 0 49px;
-  font-size: 18px;
+  /* TODO: clarify */
+  font-size: 1.8rem;
   color: #f0d8d9;
 }
 
 .form-container {
   display: flex;
-  flex-direction: 1 0 auto;
 }
 
-.name {
-  width: 619px;
-  height: 38px;
-  color: #f48c8f;
-}
-
-.mail {
-  width: 619px;
-  height: 38px;
-  color: #f48c8f;
-}
-
-.subject {
-  width: 619px;
-  height: 38px;
-  color: #f48c8f;
+.form {
+  width: 620px;
 }
 
 .describe {
   height: 202px;
-  width: 620px;
   color: #f48c8f;
 }
 
-.form {
-  width: 670px;
-}
-
 .inp {
-  margin: 0 0 16px;
-  border: 1px solid #ca4549;
+  width: 620px;
   border-radius: 5px;
   background-color: #ca4549;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: 2px solid transparent;
+}
+.inp + .inp {
+  margin-top: 18px;
+}
+
+.inp:focus {
+  border-color: #f0d8d9;
 }
 
 .contacts-title {
   font-size: 1.8rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
   color: #f0d8d9;
-  margin-bottom: 18px;
 }
 
 .contacts-description {
   color: #f0d8d9;
-  margin-bottom: 34px;
+  margin-top: 18px;
   font-size: 1.2rem;
   line-height: 2.2rem;
 }
@@ -217,11 +221,33 @@ body {
   margin-left: 20px;
 }
 
-input::placeholder {
-  color: #ffffff;
-  padding: 15px;
+.contact {
+  margin-top: 30px;
   font-size: 1.2rem;
-  font-family: Lato, sans-serif;
+  color: #f0d8d9;
+}
+
+input {
+  height: 38px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  color: #f48c8f;
+}
+
+input,
+input::placeholder,
+textarea,
+textarea::placeholder {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #f0d8d9;
 }
 
 .footer {
