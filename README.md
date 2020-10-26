@@ -38,8 +38,8 @@ url: (../fonts/Lato-Regulat.ttf)
 ```
 
 ## Комментарии
-### SCSS
-Используем **только** [многострочные](https://developer.mozilla.org/ru/docs/Web/CSS/%D0%A2%D0%B8%D1%85%D0%B8%D0%B9) (/* ... */) комментарии.
+### SASS
+Используем **только** [многострочные](https://developer.mozilla.org/ru/docs/Web/CSS/%D0%A2%D0%B8%D1%85%D0%B8%D0%B9) комментарии.
 ```scss
 /* Every except of first */
 & + &::before {
@@ -295,6 +295,83 @@ font-size: 1.2vh;
         @include portfolio-title();
     }
 }
+```
+
+## Медиа/Респонсив/Адаптив
+Для каждого компонента у которого будут медиа-стили, создаем рядом с главным (_main.scss) файлом `_responsive.scss`.
+В случае если это простой компонент (т.е. явлюящийся частью другого), то пишем для него миксин с соответствующим названием.
+`scss/components/footer/copyright/_responsive.scss`
+```scss
+@mixin copyright-responsive() {
+    @include respond-to(mobiles) {
+        margin-top: 20px;
+    }
+}
+```
+
+Если это составной компонент (тот, который включает в себя другие), то в таком случае выглядеть он будет по подобию `_main.scss` в таких компонентах.
+`scss/components/footer/_main.scss`
+```scss
+@import "socials/main";
+@import "copyright/main";
+
+.footer {
+    background-color: $blue-color-2;
+
+    &-inner {
+        @include site-width;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 0;
+    }
+
+    &-copyright {
+        @include footer-copyright;
+    }
+
+    ...
+}
+```
+
+`scss/components/footer/_responsive.scss`
+```scss
+@import "copyright/responsive";
+
+.footer {
+    &-inner {
+        @include respond-to(mobiles) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-copyright {
+        @include copyright-responsive;
+    }
+}
+```
+
+Не забываем подключить респонсив-часть компонента в отдельный банд для респонсива `scss/responsive.scss`.
+```scss
+/* Components */
+...
+@import "components/footer/responsive";
+```
+
+Медиа стили пишем только с помощью миксина `respond-to`:
+```scss
+@include respond-to(mobiles) {
+    font-size: 1.8vw;
+    margin-top: 20px;
+    ...
+}
+```
+
+Выглядит сложно, но это оправдано, так как таким образом мы получим отдельный скомпилированный CSS-файл только для респонсива (так как этот SASS-файл начинается без "_").
+Что позволить подключать файл с респонсив стилями только тогда, когда понадобится, а не со всеми другими стилями:
+`index.html`
+```HTML
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 1279px)">
 ```
 
 Также, это сводит к минимум вероятность того, что разные участники будут править один и тот же файл, создавая конфликты при слиянии.
