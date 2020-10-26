@@ -147,6 +147,8 @@ body {
 .banner {
   background: url(../img/phones-min.png) center no-repeat #eb5055;
   position: relative;
+  border-bottom: 5px solid #ea676b;
+  background-size: 80%;
 }
 
 .banner::before {
@@ -154,6 +156,227 @@ body {
   display: block;
   padding-bottom: 58.3%;
   width: 100%;
+}
+
+.services {
+  background: #f2f2f2;
+  border-bottom: 5px solid #ffffff;
+  color: #666d89;
+  padding: 65px 0;
+}
+
+.services-content {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.services-header {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-bottom: 35px;
+}
+
+.services-description {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.services-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.services-item {
+  width: 33.33333%;
+  padding-left: 95px;
+  margin-top: 40px;
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+.services-item-bubble {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.services-item-bubble::before {
+  content: "";
+  font-size: 3.2rem;
+}
+
+.services-item-bubble::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.services-item-bulb {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.services-item-bulb::before {
+  content: "";
+  font-size: 3.2rem;
+}
+
+.services-item-bulb::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.services-item-heart {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.services-item-heart::before {
+  content: "";
+  font-size: 3.2rem;
+}
+
+.services-item-heart::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.services-item-pen {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.services-item-pen::before {
+  content: "";
+  font-size: 3.2rem;
+}
+
+.services-item-pen::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.services-item-phone {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.services-item-phone::before {
+  content: "";
+  font-size: 3.2rem;
+}
+
+.services-item-phone::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.services-item-star {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #666d89;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.services-item-star::before {
+  content: "";
+  font-size: 3.2rem;
+}
+
+.services-item-star::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  border: 1px solid #666d89;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.services-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services-descriptions {
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .footer {
