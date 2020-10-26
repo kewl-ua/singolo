@@ -11,62 +11,47 @@
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
-  /* 320px - 1019px */
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .nav {
-    margin-top: 20px;
-  }
-}
-.nav-list {
-  /* 320px - 480px */
-  /* 480px - 767 px */
-  /* 320px - 767 px */
-  /* 768px - 1019px */
-  /* 320px - 1019px */
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /* 320px - 1019px */ }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .nav {
+      margin-top: 20px; } }
   .nav-list {
-    font-size: 2.5vw;
-  }
-}
+    /* 320px - 480px */
+    /* 480px - 767 px */
+    /* 320px - 767 px */
+    /* 768px - 1019px */
+    /* 320px - 1019px */ }
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+      .nav-list {
+        font-size: 2.5vw; } }
 
 .header-inner {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
-  /* 320px - 1019px */
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .header-inner {
-    flex-direction: column;
-  }
-}
+  /* 320px - 1019px */ }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header-inner {
+      flex-direction: column; } }
 
 .footer-inner {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
-  /* 320px - 1019px */
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .footer-inner {
-    flex-direction: column-reverse;
-  }
-}
+  /* 320px - 1019px */ }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .footer-inner {
+      flex-direction: column-reverse; } }
 .footer-copyright {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
-  /* 320px - 1019px */
-}
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .footer-copyright {
-    margin-top: 20px;
-  }
-}
+  /* 320px - 1019px */ }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .footer-copyright {
+      margin-top: 20px; } }
 
 /*# sourceMappingURL=responsive.css.map */
