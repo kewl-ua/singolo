@@ -217,9 +217,6 @@ body {
 .testimonial-social:hover {
   border-width: 2px;
 }
-.testimonial-link-facebook {
-  /* use !important to prevent issues with browser extensions that change fonts */
-}
 .testimonial-link-facebook::before {
   content: "";
   font-size: 1.4rem;
@@ -231,12 +228,8 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.testimonial-link-twitter {
-  /* use !important to prevent issues with browser extensions that change fonts */
 }
 .testimonial-link-twitter::before {
   content: "";
@@ -249,12 +242,8 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.testimonial-link-google {
-  /* use !important to prevent issues with browser extensions that change fonts */
 }
 .testimonial-link-google::before {
   content: "";
@@ -267,12 +256,8 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.testimonial-link-linkedin {
-  /* use !important to prevent issues with browser extensions that change fonts */
 }
 .testimonial-link-linkedin::before {
   content: "";
@@ -285,7 +270,6 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -326,9 +310,6 @@ body {
 .footer-social + .footer-social {
   margin-left: 8px;
 }
-.footer-link-facebook {
-  /* use !important to prevent issues with browser extensions that change fonts */
-}
 .footer-link-facebook::before {
   content: "";
   font-size: 1.4rem;
@@ -340,16 +321,12 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .footer-link-facebook:hover {
   color: #303441;
   background-color: #666d89;
-}
-.footer-link-twitter {
-  /* use !important to prevent issues with browser extensions that change fonts */
 }
 .footer-link-twitter::before {
   content: "";
@@ -362,16 +339,12 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .footer-link-twitter:hover {
   color: #303441;
   background-color: #666d89;
-}
-.footer-link-google {
-  /* use !important to prevent issues with browser extensions that change fonts */
 }
 .footer-link-google::before {
   content: "";
@@ -384,16 +357,12 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .footer-link-google:hover {
   color: #303441;
   background-color: #666d89;
-}
-.footer-link-linkedin {
-  /* use !important to prevent issues with browser extensions that change fonts */
 }
 .footer-link-linkedin::before {
   content: "";
@@ -406,7 +375,6 @@ body {
   text-transform: none;
   line-height: 1;
   color: #666d89;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
