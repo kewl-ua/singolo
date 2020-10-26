@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/* Globals */
+/* Colors */
+/* Media */
+/* Vertically oriented phone */
+/* Horizontally oriented phone */
+/* Vertically oritented tablet */
+/* Horizontally oriented tablet */
 /* Mixin library for general purposes */
 @font-face {
   font-family: "Lato";
@@ -121,11 +128,11 @@ body {
 }
 .nav-item + .nav-item::before {
   content: "·";
+  /* &middot; = · */
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 32px;
-  vertical-align: top;
   font-size: 1rem;
   color: #ffffff;
   opacity: 0.2;

@@ -28,3 +28,40 @@
         @include prefix(box-shadow, $top $left $spread $blur $color);
     }
 }
+
+@mixin respond-to($device) {
+    /* 320px - 480px */
+    @if $device == mobile-portrait {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $mobile-landscape - 1) {
+            @content;
+        }
+    }
+
+    /* 480px - 767 px */
+    @if $device == mobile-landscape {
+        @media only screen and (min-width: $mobile-landsacpe) and (max-width: $tablet-portrait - 1) {
+            @content;
+        }
+    }
+
+    /* 320px - 767 px */
+    @if $device == mobiles {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet-portrait - 1) {
+            @content;
+        }
+    }
+
+    /* 768px - 1279px */
+    @if $device == tablet {
+        @media only screen and (min-width: $tablet-portrait) and (max-width: $tablet-landscape - 1) {
+            @content;
+        }
+    }
+
+    /* 320px - 1279px */
+    @if $device == devices {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet-landscape - 1) {
+            @content;
+        }
+    }
+}

@@ -1,7 +1,10 @@
+/* Globals */
 $global-font-size: 10px;
 $global-font-family: 'Lato', sans-serif;
 $global-site-width: 940px;
+$global-mobile-padding: 20px;
 
+/* Colors */
 $blue-color-1: #666d89;
 $blue-color-2: #303441;
 $blue-color-3: #373b4a;
@@ -19,3 +22,9 @@ $red-color-1: #ee5052;
 $red-color-2: #ca4549;
 $red-color-3: #ea676b;
 $red-color-4: #f48c8f;
+
+/* Media */
+$mobile-portrait: 320px; /* Vertically oriented phone */
+$mobile-landscape: 480px; /* Horizontally oriented phone */
+$tablet-portrait: 768px; /* Vertically oritented tablet */
+$tablet-landscape: 1280px; /* Horizontally oriented tablet */

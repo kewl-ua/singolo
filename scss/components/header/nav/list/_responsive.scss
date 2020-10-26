@@ -1,0 +1,9 @@
+@mixin nav-list-responsive {
+    @include respond-to(devices) {
+        margin-top: 20px;
+    }
+
+    @include respond-to(mobiles) {
+        font-size: 2vw;
+    }
+}

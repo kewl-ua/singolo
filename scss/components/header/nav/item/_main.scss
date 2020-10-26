@@ -2,12 +2,11 @@
     display: inline-flex;
 
     & + &::before {
-        content: "\00B7"; // &middot; = ·
+        content: "\00B7"; /* &middot; = · */
         display: inline-flex;
         justify-content: center;
         align-items: center;
         width: 32px;
-        vertical-align: top;
         font-size: 1rem;
         color: $white-color-1;
         opacity: 0.2

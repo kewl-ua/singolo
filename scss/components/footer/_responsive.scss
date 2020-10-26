@@ -1,0 +1,13 @@
+@import "copyright/responsive";
+
+.footer {
+    &-inner {
+        @include respond-to(mobiles) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-copyright {
+        @include copyright-responsive;
+    }
+}
