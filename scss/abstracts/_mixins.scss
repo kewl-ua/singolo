@@ -44,28 +44,28 @@
 
     /* 480px - 767 px */
     @if $device == mobile-landscape {
-        @media only screen and (min-width: $mobile-landscape) and (max-width: $tablet-portrait - 1) {
+        @media only screen and (min-width: $mobile-landscape) and (max-width: $tablet - 1) {
             @content;
         }
     }
 
     /* 320px - 767 px */
     @if $device == mobiles {
-        @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet-portrait - 1) {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
             @content;
         }
     }
 
-    /* 768px - 1279px */
+    /* 768px - 1019px */
     @if $device == tablet {
-        @media only screen and (min-width: $tablet-portrait) and (max-width: $tablet-landscape - 1) {
+        @media only screen and (min-width: $tablet) and (max-width: $desktop - 1) {
             @content;
         }
     }
 
-    /* 320px - 1279px */
+    /* 320px - 1019px */
     @if $device == devices {
-        @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet-landscape - 1) {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $desktop - 1) {
             @content;
         }
     }

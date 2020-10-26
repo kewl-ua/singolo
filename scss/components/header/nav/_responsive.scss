@@ -1,6 +1,10 @@
 @import "list/responsive";
 
 .nav {
+    @include respond-to(mobiles) {
+        margin-top: 20px;
+    }
+
     &-list {
         @include nav-list-responsive;
     }
