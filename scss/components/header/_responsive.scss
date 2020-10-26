@@ -1,0 +1,9 @@
+@import "nav/responsive";
+
+.header {
+    &-inner {
+        @include respond-to(mobiles) {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,3 @@
+@mixin testimonials-link() {
+	@include social-link($blue-color-1, 1.4rem);
+}

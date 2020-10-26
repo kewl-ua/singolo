@@ -2,6 +2,11 @@
 @mixin site-width($width: $global-site-width) {
     max-width: $width;
     margin: 0 auto;
+
+    @include respond-to(devices) {
+        padding-left: $global-mobile-padding;
+        padding-right: $global-mobile-padding;
+    }
 }
 
 @mixin prefix($property, $value, $vendors: webkit moz ms o) {
@@ -20,11 +25,48 @@
     line-height: $line-height;
 }
 
-@mixin box-shadow($top: 0, $left: 0, $blur: 4px, $color: transparent, $inset: false) {
+@mixin box-shadow($top: 0, $left: 0, $spread: 10px, $blur: 4px, $color: transparent, $inset: false) {
     @if $inset {
-        @include prefix(box-shadow, inset $top $left $blur $color);
+        @include prefix(box-shadow, inset $top $left $spread $blur $color);
     }
     @else {
-        @include prefix(box-shadow, $top $left $blur $color);
+        @include prefix(box-shadow, $top $left $spread $blur $color);
+    }
+}
+
+@mixin respond-to($device) {
+    /* 320px - 480px */
+    @if $device == mobile-portrait {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $mobile-landscape - 1) {
+            @content;
+        }
+    }
+
+    /* 480px - 767 px */
+    @if $device == mobile-landscape {
+        @media only screen and (min-width: $mobile-landscape) and (max-width: $tablet - 1) {
+            @content;
+        }
+    }
+
+    /* 320px - 767 px */
+    @if $device == mobiles {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
+            @content;
+        }
+    }
+
+    /* 768px - 1019px */
+    @if $device == tablet {
+        @media only screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+            @content;
+        }
+    }
+
+    /* 320px - 1019px */
+    @if $device == devices {
+        @media only screen and (min-width: $mobile-portrait) and (max-width: $desktop - 1) {
+            @content;
+        }
     }
 }
