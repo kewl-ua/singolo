@@ -3,4 +3,5 @@
     color: $red-color-4;
     background-color: $red-color-2;
     margin-top: 18px;
+    @include prefix(resize, none);
 }
