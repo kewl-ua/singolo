@@ -1,0 +1,8 @@
+@import "contacts/responsive";
+@import "form/input/responsive";
+
+@mixin feedback-content-responsive() {
+    @include respond-to(devices) {
+        flex-direction: column;
+    }
+}

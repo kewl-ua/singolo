@@ -1,0 +1,7 @@
+@import "link/main";
+
+@mixin contacts-item() {
+    & + & {
+        margin-top: 10px;
+    }
+}

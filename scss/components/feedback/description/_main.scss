@@ -1,0 +1,6 @@
+@mixin feedback-description() {
+    @include font(1.8rem, 300);
+    margin-top: 32px;
+    color: $white-color-3;
+    line-height: 3rem;
+}

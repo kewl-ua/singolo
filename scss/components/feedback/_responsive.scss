@@ -1,0 +1,15 @@
+@import "content/responsive";
+
+.feedback {
+    @include respond-to(devices) {
+        text-align: center;
+    }
+
+    &-content {
+        @include feedback-content-responsive;
+    }
+
+    &-input {
+        @include feedback-input-responsive;
+    }
+}

@@ -1,15 +1,14 @@
-@import "testimonials";
-@import "testimonial";
-@import "image";
-@import "name";
-@import "info";
-@import "socials";
-@import "social";
-@import "link";
+@import "testimonials/main";
+@import "testimonial/main";
+@import "image/main";
+@import "name/main";
+@import "info/main";
+@import "socials/main";
+@import "social/main";
+@import "link/main";
 
 .testimonials {
 	@include testimonials;
-	margin-top: 50px;
 }
 
 .testimonial {

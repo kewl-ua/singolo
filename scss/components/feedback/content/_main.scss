@@ -1,0 +1,7 @@
+@import "contacts/main";
+@import "form/main";
+
+@mixin feedback-content() {
+    display: flex;
+    margin-top: 45px;
+}

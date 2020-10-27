@@ -1,0 +1,3 @@
+@mixin feedback-title() {
+    @include title($white-color-3);
+}

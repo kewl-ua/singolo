@@ -1,0 +1,11 @@
+@import "testimonials/responsive";
+
+.about {
+	&-inner {
+		@include respond-to(mobiles) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+@import "title/main";
+@import "description/main";
+@import "list/main";
+@import "item/main";
+
+
+.contacts {
+    margin-left: 20px;
+    color: $white-color-3;
+
+    &-title {
+        @include contacts-title;
+    }
+
+    &-description {
+        @include contacts-description;
+    }
+
+    &-list {
+        @include contacts-list;
+    }
+
+    &-item {
+        @include contacts-item;
+    }
+
+    &-link {
+        @include contacts-link;
+    }
+}
