@@ -13,7 +13,6 @@ input {
 
 textarea {
     height: 202px;
-    /* TODO: width? */
 }
 
 input,
@@ -21,9 +20,9 @@ textarea {
     font-family: inherit;
     padding: 15px;
     color: $red-color-4;
+    border: 2px solid transparent;
     border-radius: 5px;
     outline: none;
-    border: 2px solid transparent;
 }
 
 input,

@@ -70,9 +70,9 @@
     width: 100%;
     align-items: center;
   }
-}
-.testimonial + .testimonial {
-  margin-top: 20px;
+  .testimonial + .testimonial {
+    margin-top: 20px;
+  }
 }
 .testimonial-name {
   /* 320px - 480px */
@@ -123,6 +123,7 @@
   .about-inner {
     padding-top: 40px;
     padding-bottom: 40px;
+    text-align: center;
   }
 }
 

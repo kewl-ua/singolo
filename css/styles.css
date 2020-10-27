@@ -88,7 +88,6 @@ input {
 
 textarea {
   height: 202px;
-  /* TODO: width? */
 }
 
 input,
@@ -96,9 +95,9 @@ textarea {
   font-family: inherit;
   padding: 15px;
   color: #f48c8f;
+  border: 2px solid transparent;
   border-radius: 5px;
   outline: none;
-  border: 2px solid transparent;
 }
 
 input,
@@ -157,7 +156,6 @@ textarea:focus {
   font-size: 2.5rem;
   font-weight: bold;
   font-style: normal;
-  line-height: normal;
 }
 .header-logo::after {
   content: "*";
@@ -168,7 +166,6 @@ textarea:focus {
   font-size: 1.2rem;
   font-weight: bold;
   font-style: normal;
-  line-height: normal;
   display: flex;
 }
 .nav-item {
@@ -181,7 +178,7 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   width: 32px;
-  font-size: 1rem;
+  font-size: 1em;
   color: #ffffff;
   opacity: 0.2;
 }
@@ -206,7 +203,6 @@ textarea:focus {
   /* 320px - 1019px */
   padding-top: 64px;
   padding-bottom: 64px;
-  text-align: center;
 }
 @media only screen and (min-width: 320px) and (max-width: 939px) {
   .about-inner {
@@ -218,21 +214,21 @@ textarea:focus {
   font-size: 3rem;
   font-weight: 900;
   font-style: normal;
-  line-height: normal;
   color: #666d89;
 }
 .about-description {
   font-size: 1.8rem;
   font-weight: 300;
   font-style: normal;
-  line-height: normal;
   color: #373b4a;
   margin-top: 25px;
+  line-height: 3rem;
 }
 
 .testimonials {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 .testimonial {
@@ -260,7 +256,6 @@ textarea:focus {
   font-size: 1.8rem;
   font-weight: 900;
   font-style: normal;
-  line-height: normal;
   color: #666d89;
   padding: 20px 0;
 }
@@ -368,7 +363,6 @@ textarea:focus {
   font-size: 1.8rem;
   font-weight: 900;
   font-style: normal;
-  line-height: normal;
 }
 .contacts-description {
   margin-top: 15px;
@@ -449,14 +443,12 @@ textarea:focus {
   font-size: 3rem;
   font-weight: 900;
   font-style: normal;
-  line-height: normal;
   color: #f0d8d9;
 }
 .feedback-description {
   font-size: 1.8rem;
   font-weight: 300;
   font-style: normal;
-  line-height: normal;
   margin-top: 32px;
   color: #f0d8d9;
   line-height: 3rem;
@@ -480,6 +472,11 @@ textarea:focus {
   color: #f48c8f;
   background-color: #ca4549;
   margin-top: 18px;
+  -webkit-resize: none;
+  -moz-resize: none;
+  -ms-resize: none;
+  -o-resize: none;
+  resize: none;
 }
 
 .footer {
@@ -508,7 +505,6 @@ textarea:focus {
   font-size: 1.2rem;
   font-weight: normal;
   font-style: normal;
-  line-height: normal;
   color: #666d89;
 }
 .footer-copyright-link:hover {
