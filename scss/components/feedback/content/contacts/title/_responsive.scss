@@ -1,0 +1,5 @@
+@mixin contacts-title-responsive() {
+    @include respond-to(devices) {
+        font-size: 2.5rem;
+    }    
+}

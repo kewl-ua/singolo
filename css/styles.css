@@ -378,7 +378,7 @@ textarea:focus {
 }
 .contacts-link-address::before {
   content: "";
-  font-size: 1.2rem;
+  font-size: inherit;
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -392,7 +392,7 @@ textarea:focus {
 }
 .contacts-link-phone::before {
   content: "";
-  font-size: 1.2rem;
+  font-size: inherit;
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -406,7 +406,7 @@ textarea:focus {
 }
 .contacts-link-email::before {
   content: "";
-  font-size: 1.2rem;
+  font-size: inherit;
   font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
@@ -459,9 +459,6 @@ textarea:focus {
 .feedback-content {
   display: flex;
   margin-top: 45px;
-}
-.feedback-form {
-  width: 620px;
 }
 .feedback-input {
   width: 620px;
