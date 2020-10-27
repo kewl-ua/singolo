@@ -82,7 +82,7 @@ body {
 }
 
 input {
-  min-width: 300px;
+  min-width: 200px;
   font-size: 1.2rem;
 }
 
@@ -371,6 +371,7 @@ textarea:focus {
 }
 .contacts-list {
   margin-top: 25px;
+  font-size: 1.2rem;
 }
 .contacts-item + .contacts-item {
   margin-top: 10px;
