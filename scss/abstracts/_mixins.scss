@@ -18,11 +18,10 @@
     #{$property}: #{$value};
 }
 
-@mixin font($size: $global-font-size, $weight: normal, $style: normal, $line-height: normal) {
+@mixin font($size: $global-font-size, $weight: normal, $style: normal) {
     font-size: $size;
     font-weight: $weight;
     font-style: $style;
-    line-height: $line-height;
 }
 
 @mixin box-shadow($top: 0, $left: 0, $spread: 10px, $blur: 4px, $color: transparent, $inset: false) {

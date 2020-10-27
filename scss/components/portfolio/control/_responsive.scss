@@ -1,0 +1,19 @@
+@mixin portfolio-control-responsive() {
+    @include respond-to(mobiles) {
+        &.all {
+            left: 21px;
+        }
+
+        &.web-design {
+            left: 55px;
+        }
+
+        &.graphic-design {
+            left: 139px;
+        }
+
+        &.artwork {
+            left: 241px;
+        }
+    }
+}

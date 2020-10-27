@@ -1,0 +1,55 @@
+@import "title/main";
+@import "description/main";
+@import "list/main";
+@import "item/main";
+@import "input/main";
+@import "control/main";
+@import "image/main";
+
+.portfolio {
+    background-color: $blue-color-2;
+    border-bottom: 6px solid $blue-color-3;
+
+    &-inner {
+        @include site-width;
+		padding: 60px 0 53px;
+
+		@media only screen and (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        @media only screen and (min-width: $mobile-landscape) and (max-width: $tablet - 1) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &-title {
+        @include portfolio-title;
+    }
+
+    &-description {
+        @include portfolio-description;
+    }
+
+    &-input {
+        @include portfolio-input;
+    }
+
+    &-control {
+        @include portfolio-control;
+    }
+
+    &-list {
+        @include portfolio-list;
+    }
+
+    &-item {
+        @include portfolio-item;
+    }
+
+    &-image {
+        @include portfolio-image;
+    }
+}

@@ -1,0 +1,6 @@
+@mixin testimonials-info-responsive() {
+	@include respond-to(mobiles) {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+}

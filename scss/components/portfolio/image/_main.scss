@@ -1,0 +1,10 @@
+@mixin portfolio-image() {
+    @include prefix(transition, all 1s ease-out);
+    width: 100%;
+    height: 100%;
+
+    &:hover {
+        transform: scale(1.3);
+        transform-origin: center;
+    }
+}

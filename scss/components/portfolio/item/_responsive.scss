@@ -1,0 +1,23 @@
+@mixin portfolio-item-responsive() {
+    // @media only screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+	// 	.portfolio_item {
+	// 		width: calc(100%/2 - 20px);
+	// 		height: auto;
+	// 	}
+	// }
+
+	// @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
+    //     .portfolio_item {
+	// 		width: 100%;
+	// 		height: auto;
+	// 	}
+    // }
+
+    @include respond-to(tablet) {
+        width: calc(100% / 2 - 20px);
+    }
+
+    @include respond-to(mobiles) {
+        width: 100%;
+    }
+}

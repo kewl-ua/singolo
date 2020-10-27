@@ -1,0 +1,24 @@
+@import "item/responsive";
+@import "control/responsive";
+
+.portfolio {
+    &-inner {
+        @include respond-to(mobiles) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        @include respond-to(devices) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &-item {
+        @include portfolio-item-responsive;
+    }
+
+    &-control {
+        @include portfolio-control-responsive;
+    }
+}
