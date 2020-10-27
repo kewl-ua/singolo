@@ -1,0 +1,57 @@
+@mixin services-item-responsive() {
+    @include respond-to(devices) {
+        width: calc(50% - 20px);
+
+        /* TODO: reimplement */
+        &:nth-child(3n - 2) {
+            margin-left: 10px;
+        }
+
+        &:nth-child(2n - 1) {
+            margin-left: 0;
+        }
+    }
+
+    @include respond-to(mobiles) {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 0;
+
+        &:nth-child(3n - 2) {
+            margin-left: 0;
+        }
+
+        &:nth-child(2n - 1) {
+            margin-left: 0;
+        }
+
+        &::before {
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+
+        &-bubble {
+            @include icon-bubble($blue-color-1, 5rem);
+        }
+    
+        &-bulb {
+            @include icon-bulb($blue-color-1, 5rem);
+        }
+    
+        &-heart {
+            @include icon-heart($blue-color-1, 5rem);
+        }
+    
+        &-pen {
+            @include icon-pen($blue-color-1, 5rem);
+        }
+    
+        &-phone {
+            @include icon-phone($blue-color-1, 5rem);
+        }
+    
+        &-star {
+            @include icon-star($blue-color-1, 5rem);
+        }
+    }
+}

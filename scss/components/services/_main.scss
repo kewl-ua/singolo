@@ -1,14 +1,44 @@
+@import "title/main";
+@import "description/main";
+@import "list/main";
+@import "item/main";
+@import "item-title/main";
+@import "item-description/main";
+
 .service {
+    padding: 65px 0;
     background: $white-color-2;
     border-bottom: 6px solid $white-color-1;
     color: $blue-color-1;
-    padding: 65px 0;
 
     &-inner {
         @include site-width;
     }
 
+    &-title {
+        @include services-title;
+    }
+
+    &-description {
+        @include services-description;
+    }
 }
 
-@import "header/header";
-@import "items/items";
+.services {
+    &-list {
+        @include services-list;
+    }
+
+    &-item {
+        @include services-item;
+
+        &-title {
+            @include services-item-title;
+        }
+    
+        &-description {
+            @include services-item-description;
+        }
+    }
+}
+

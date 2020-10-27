@@ -1,8 +1,11 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
+@import "components/icon";
+
 /* Components */
 @import "components/header/responsive";
+@import "components/services/responsive";
 @import "components/portfolio/responsive";
 @import "components/about/responsive";
 @import "components/feedback/responsive";

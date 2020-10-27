@@ -1,0 +1,5 @@
+@mixin services-title-responsive() {
+    @include respond-to(mobiles) {
+        font-size: 3.2rem;
+    }
+}

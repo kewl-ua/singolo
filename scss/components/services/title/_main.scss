@@ -1,0 +1,4 @@
+@mixin services-title() {
+    @include title($blue-color-1);
+    padding-bottom: 35px;
+}
