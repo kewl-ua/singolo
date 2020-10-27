@@ -45,7 +45,7 @@
   }
 }
 
-.service {
+.services {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
@@ -53,11 +53,11 @@
   /* 320px - 1019px */
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .service {
+  .services {
     text-align: center;
   }
 }
-.service-title {
+.services-title {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
@@ -65,11 +65,11 @@
   /* 320px - 1019px */
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .service-title {
+  .services-title {
     font-size: 3.2rem;
   }
 }
-.service-description {
+.services-description {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
@@ -77,12 +77,12 @@
   /* 320px - 1019px */
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .service-description {
+  .services-description {
     font-size: 2rem;
   }
 }
 
-.services-item {
+.service {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
@@ -95,32 +95,28 @@
   /* 320px - 1019px */
 }
 @media only screen and (min-width: 320px) and (max-width: 939px) {
-  .services-item {
+  .service {
     width: calc(50% - 20px);
     /* Reseting desktop nth rule margins */
   }
-  .services-item:nth-child(3n-2) {
+  .service:nth-child(3n-2) {
     margin-left: 10px;
   }
-  .services-item:nth-child(2n-1) {
+  .service:nth-child(2n-1) {
     margin-left: 0;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .services-item {
+  .service {
     width: 100%;
     padding-top: 100px;
     padding-left: 0;
-    /* Reseting desktop nth rule margins */
-    /* Reseting tablets nth rule margins */
+    /* Reseting tablets and desktop nth rule margins */
   }
-  .services-item:nth-child(3n-2) {
+  .service:nth-child(3n-2), .service:nth-child(2n-1) {
     margin-left: 0;
   }
-  .services-item:nth-child(2n-1) {
-    margin-left: 0;
-  }
-  .services-item::before {
+  .service::before {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -128,7 +124,7 @@
     transform: translateX(-50%);
     left: 50%;
   }
-  .services-item-bubble::before {
+  .service-bubble::before {
     content: "";
     font-size: 5rem;
     font-family: "icomoon" !important;
@@ -142,7 +138,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .services-item-bulb::before {
+  .service-bulb::before {
     content: "";
     font-size: 5rem;
     font-family: "icomoon" !important;
@@ -156,7 +152,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .services-item-heart::before {
+  .service-heart::before {
     content: "";
     font-size: 5rem;
     font-family: "icomoon" !important;
@@ -170,7 +166,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .services-item-pen::before {
+  .service-pen::before {
     content: "";
     font-size: 5rem;
     font-family: "icomoon" !important;
@@ -184,7 +180,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .services-item-phone::before {
+  .service-phone::before {
     content: "";
     font-size: 5rem;
     font-family: "icomoon" !important;
@@ -198,7 +194,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  .services-item-star::before {
+  .service-star::before {
     content: "";
     font-size: 5rem;
     font-family: "icomoon" !important;
@@ -213,14 +209,14 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
-.services-item-title {
+.service-title {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
   /* 320px - 1019px */
 }
-.services-item-description {
+.service-description {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
@@ -228,7 +224,7 @@
   /* 320px - 1019px */
 }
 @media only screen and (min-width: 320px) and (max-width: 939px) {
-  .services-item-description {
+  .service-description {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
@@ -457,7 +453,7 @@
   /* 768px - 1019px */
   /* 320px - 1019px */
 }
-@media only screen and (min-width: 320px) and (max-width: 939px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .feedback {
     text-align: center;
   }

@@ -1,10 +1,10 @@
 @import "title/responsive";
 @import "description/responsive";
-@import "item/responsive";
-@import "item-title/responsive";
-@import "item-description/responsive";
+@import "service/responsive";
+@import "service-title/responsive";
+@import "service-description/responsive";
 
-.service {
+.services {
 	@include respond-to(mobiles) {
 		text-align: center;
 	}
@@ -18,16 +18,14 @@
 	}
 }
 
-.services {
-	&-item {
-		@include services-item-responsive;
+.service {
+	@include services-responsive;
 
-		&-title {
-			@include services-item-title-responsive;
-		}
+	&-title {
+		@include service-title-responsive;
+	}
 
-		&-description {
-			@include services-item-description-responsive;
-		}
+	&-description {
+		@include service-description-responsive;
 	}
 }

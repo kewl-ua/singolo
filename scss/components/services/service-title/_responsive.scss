@@ -1,4 +1,4 @@
-@mixin services-item-title-responsive() {
+@mixin service-title-responsive() {
     @include respond-to(devies) {
         font-size: 2rem;
     }

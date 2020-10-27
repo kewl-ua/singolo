@@ -1,4 +1,4 @@
-@mixin services-item-responsive() {
+@mixin services-responsive() {
     @include respond-to(devices) {
         width: calc(50% - 20px);
 
@@ -17,12 +17,8 @@
         padding-top: 100px;
         padding-left: 0;
 
-        /* Reseting desktop nth rule margins */
-        &:nth-child(3n - 2) {
-            margin-left: 0;
-
-        }
-        /* Reseting tablets nth rule margins */
+        /* Reseting tablets and desktop nth rule margins */
+        &:nth-child(3n - 2),
         &:nth-child(2n - 1) {
             margin-left: 0;
         }
