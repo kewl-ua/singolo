@@ -1,17 +1,21 @@
 @import "item/responsive";
 @import "control/responsive";
+@import "description/responsive";
 
 .portfolio {
+    @include respond-to(devices) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     &-inner {
         @include respond-to(mobiles) {
-            padding-top: 30px;
-            padding-bottom: 30px;
+            text-align: center;
         }
+    }
 
-        @include respond-to(devices) {
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
+    &-description {
+        @include portfolio-description-responsive;
     }
 
     &-item {

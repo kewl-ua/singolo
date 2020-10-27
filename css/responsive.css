@@ -48,12 +48,22 @@
   }
 }
 
-.portfolio-inner {
+.portfolio {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
   /* 320px - 1019px */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 939px) {
+  .portfolio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.portfolio-inner {
   /* 320px - 480px */
   /* 480px - 767 px */
   /* 320px - 767 px */
@@ -63,15 +73,21 @@
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .portfolio-inner {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    text-align: center;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 939px) {
-  .portfolio-inner {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.portfolio-description {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-description {
+    margin: 24px 0;
   }
 }
 
@@ -110,16 +126,16 @@
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .portfolio-control.all {
-    left: 21px;
+    left: 8.73%;
   }
   .portfolio-control.web-design {
-    left: 55px;
+    left: 21.97%;
   }
   .portfolio-control.graphic-design {
-    left: 139px;
+    left: 49%;
   }
   .portfolio-control.artwork {
-    left: 241px;
+    left: 80.28%;
   }
 }
 
