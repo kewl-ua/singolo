@@ -450,7 +450,7 @@ textarea:focus {
   border: 0.063rem solid #767e9e;
   border-radius: 0.25rem;
 }
-.portfolio-control:hover {
+#web-design:checked ~ .portfolio-control.web-design, #graphic-design:checked ~ .portfolio-control.graphic-design, #artwork:checked ~ .portfolio-control.artwork, .portfolio-control:hover {
   cursor: pointer;
   color: #ffffff;
   border: 0.063rem solid #ffffff;

@@ -8,6 +8,9 @@
     border: 0.063rem solid $blue-color-4;
     border-radius: 0.25rem;
 
+	#web-design:checked ~ &.web-design,
+	#graphic-design:checked ~ &.graphic-design,
+	#artwork:checked ~ &.artwork,
     &:hover {
         cursor: pointer;
         color: $white-color-1;
