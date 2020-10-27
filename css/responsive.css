@@ -44,6 +44,90 @@
   }
 }
 
+.portfolio {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 939px) {
+  .portfolio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.portfolio-inner {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-inner {
+    text-align: center;
+  }
+}
+.portfolio-description {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-description {
+    margin: 24px 0;
+  }
+}
+.portfolio-item {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .portfolio-item {
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-item {
+    width: 100%;
+  }
+}
+.portfolio-control {
+  /* 320px - 480px */
+  /* 480px - 767 px */
+  /* 320px - 767 px */
+  /* 768px - 1019px */
+  /* 320px - 1019px */
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-control {
+    font-size: 3vw;
+  }
+  .portfolio-control.all {
+    left: 8.73%;
+  }
+  .portfolio-control.web-design {
+    left: 21.97%;
+  }
+  .portfolio-control.graphic-design {
+    left: 49%;
+  }
+  .portfolio-control.artwork {
+    left: 80.28%;
+  }
+}
+
 .testimonials {
   /* 320px - 480px */
   /* 480px - 767 px */

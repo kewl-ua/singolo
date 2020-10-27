@@ -1,0 +1,21 @@
+@mixin portfolio-control-responsive() {
+    @include respond-to(mobiles) {
+        &.all {
+            left: 8.73%;
+        }
+
+        &.web-design {
+            left: 21.97%;
+        }
+
+        &.graphic-design {
+            left: 49%;
+        }
+
+        &.artwork {
+            left: 80.28%;
+        }
+
+        font-size: 3vw;
+    }
+}
