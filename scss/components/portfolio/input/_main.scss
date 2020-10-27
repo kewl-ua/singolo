@@ -1,0 +1,47 @@
+@mixin portfolio-input() {
+    display: none;
+
+    &#all:checked {
+        & ~ .portfolio-item {
+            display: block;
+        }
+
+        & ~ .all {
+            color: $white-color-1;
+	        border: 0.063rem solid $white-color-1;
+        }
+    }
+
+    &#web-design:checked {
+        & ~ .portfolio-item.web-design {
+            display: block;
+        }
+
+        & ~ .portfolio-item.graphic-design,
+        & ~.portfolio-item.artwork {
+            display: none;
+        }
+    }
+
+    &#graphic-design:checked {
+        & ~ .portfolio-item.graphic-design {
+            display: block;
+        }
+
+        & ~ .portfolio-item.web-design,
+        & ~ .portfolio-item.artwork {
+            display: none;
+        }
+    }
+
+    &#artwork:checked {
+        & ~ .portfolio-item.artwork {
+            display: block;
+        }
+
+        & ~ .portfolio-item.web-design,
+        & ~ .portfolio-item.graphic-design {
+            display: none;
+        }
+    }
+}

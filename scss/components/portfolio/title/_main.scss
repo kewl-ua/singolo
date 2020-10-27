@@ -1,0 +1,3 @@
+@mixin portfolio-title() {
+    @include title($blue-color-1);
+}
