@@ -1,0 +1,23 @@
+.service {
+	@include respond-to(mobile-portrait) {
+		text-align: center;
+	}
+	
+	&-title {
+		@include respond-to(tablet) {
+			font-size: 3.2rem;
+		}
+		@include respond-to(mobile-portrait) {
+			font-size: 3.5rem;
+		}
+	}
+
+	&-description {
+		@include respond-to(tablet) {
+			font-size: 2rem;
+		}
+		@include respond-to(mobile-portrait) {
+			font-size: 2.3rem;
+		}
+	}
+}

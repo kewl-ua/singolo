@@ -1,0 +1,99 @@
+.services {
+
+	&-list {
+
+	}
+
+	&-item { 
+		@include respond-to(tablet) {
+			width: 50%;
+		}
+		@include respond-to(mobile-portrait) {
+			text-align: center;
+			width: 100%;
+			padding-top: 100px;
+			padding-left: 0;
+		}
+		&-bubble {
+			@include respond-to(mobile-portrait) {
+			@include icon-bubble($blue-color-1, 5rem);
+
+			&::before {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		}&-bulb {
+			@include respond-to(mobile-portrait) {
+				@include icon-bulb($blue-color-1, 5rem);
+				
+				&::before {
+					left: 50%;
+					transform: translate(-50%, 0%);
+				}
+			}
+		}
+		&-heart {
+			@include respond-to(mobile-portrait) {
+				@include icon-heart($blue-color-1, 5rem);
+				
+				&::before {
+					left: 50%;
+					transform: translate(-50%, 0%);
+				}
+			}
+		}
+		&-pen {
+			@include respond-to(mobile-portrait) {
+				@include icon-pen($blue-color-1, 5rem);
+				
+				&::before {
+					left: 50%;
+					transform: translate(-50%, 0%);
+				}
+			}
+		}
+		&-phone {
+			@include respond-to(mobile-portrait) {
+				@include icon-phone($blue-color-1, 5rem);
+				
+				&::before {
+					left: 50%;
+					transform: translate(-50%, 0%);
+				}
+			}
+		}
+		&-star {
+			@include respond-to(mobile-portrait) {
+				@include icon-star($blue-color-1, 5rem);
+				
+				&::before {
+					left: 50%;
+					transform: translate(-50%, 0%);
+				}
+			}
+		}
+	}
+
+	&-title {
+		@include respond-to(tablet) {
+			font-size: 2rem;
+			}
+			@include respond-to(mobiles) {
+				font-size: 2rem;
+			}
+		}
+
+	&-descriptions{
+		@include respond-to(tablet) {
+			font-size: 1.5rem;
+			line-height: 2.5rem;
+
+		}
+		@include respond-to(mobiles) {
+			font-size: 1.5rem;
+			line-height: 2.8rem;
+		}
+	}
+
+}

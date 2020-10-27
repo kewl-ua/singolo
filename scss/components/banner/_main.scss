@@ -1,0 +1,13 @@
+.banner {
+	background: url(../img/phones-min.png) center no-repeat $red-color-5;
+	position: relative;
+	border-bottom: 6px solid $red-color-3;
+	background-size: 80%;
+
+	&::before {
+		content: "";
+		display: block;
+		padding-bottom: 58.3%;
+		width: 100%;
+	}
+}

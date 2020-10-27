@@ -1,0 +1,106 @@
+.services {
+    &-list {
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+
+    &-item {
+        width: 33.33333%;
+        padding-left: 95px;
+        margin-top: 40px;
+        position: relative;
+
+        &-bubble {
+            @include icon-bubble($blue-color-1, 3.2rem);
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 15px;
+                border: 1px solid $blue-color-1;
+                border-radius: 50%;
+                padding: 15px;
+
+            }
+        }
+
+        &-bulb {
+            @include icon-bulb($blue-color-1, 3.2rem);
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 15px;
+                border: 1px solid $blue-color-1;
+                border-radius: 50%;
+                padding: 15px;
+
+            }
+        }
+
+        &-heart {
+            @include icon-heart($blue-color-1, 3.2rem);
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 15px;
+                border: 1px solid $blue-color-1;
+                border-radius: 50%;
+                padding: 15px;
+
+            }
+        }
+
+        &-pen {
+            @include icon-pen($blue-color-1, 3.2rem);
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 15px;
+                border: 1px solid $blue-color-1;
+                border-radius: 50%;
+                padding: 15px;
+
+            }
+        }
+
+        &-phone {
+            @include icon-phone($blue-color-1, 3.2rem);
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 15px;
+                border: 1px solid $blue-color-1;
+                border-radius: 50%;
+                padding: 15px;
+
+            }
+        }
+
+        &-star {
+            @include icon-star($blue-color-1, 3.2rem);
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 15px;
+                border: 1px solid $blue-color-1;
+                border-radius: 50%;
+                padding: 15px;
+
+            }
+        }
+    }
+
+    &-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &-descriptions {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        hyphens: auto;
+    }
+}
+
+@import "responsive";
