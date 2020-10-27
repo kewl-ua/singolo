@@ -1,0 +1,6 @@
+@mixin testimonials-responsive() {
+	@include respond-to(mobiles) {
+		flex-direction: column;
+		padding-top: 40px;
+	}
+}

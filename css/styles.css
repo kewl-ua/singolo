@@ -195,7 +195,6 @@ textarea:focus {
 .about {
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
-  padding: 64px 0;
 }
 .about-inner {
   max-width: 940px;
@@ -205,6 +204,9 @@ textarea:focus {
   /* 320px - 767 px */
   /* 768px - 1019px */
   /* 320px - 1019px */
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
 }
 @media only screen and (min-width: 320px) and (max-width: 939px) {
   .about-inner {
@@ -224,18 +226,20 @@ textarea:focus {
   font-weight: 300;
   font-style: normal;
   line-height: normal;
-  color: #767e9e;
+  color: #373b4a;
   margin-top: 25px;
 }
 
 .testimonials {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 .testimonial {
+  display: flex;
   width: calc((100% - 40px) / 3);
+  flex-direction: column;
+  justify-content: space-between;
 }
 .testimonial-image {
   width: 100%;
@@ -261,6 +265,7 @@ textarea:focus {
   padding: 20px 0;
 }
 .testimonial-info {
+  flex-grow: 1;
   font-size: 1.2rem;
   color: #767e9e;
 }
