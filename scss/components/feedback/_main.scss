@@ -1,0 +1,37 @@
+@import "title/main";
+@import "description/main";
+@import "content/main";
+
+.feedback {
+    background: $red-color-5;
+    border-bottom: 6px solid $red-color-3;
+
+    &-inner {
+        @include site-width();
+        padding: 68px 0; /* TODO: clarify */
+    }
+
+    &-title {
+        @include feedback-title;
+    }
+
+    &-description {
+        @include feedback-description;
+    }
+
+    &-content {
+        @include feedback-content;
+    }
+
+    &-form {
+        @include feedback-form;
+    }
+
+    &-input {
+        @include feedback-input;
+    }
+
+    &-textarea {
+        @include feedback-textarea;
+    }
+}

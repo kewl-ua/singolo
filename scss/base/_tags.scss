@@ -6,3 +6,40 @@ body {
     font-family: $global-font-family;
 }
 
+input {
+    min-width: 300px;
+    font-size: 1.2rem;
+}
+
+textarea {
+    height: 202px;
+    /* TODO: width? */
+}
+
+input,
+textarea {
+    font-family: inherit;
+    padding: 15px;
+    color: $red-color-4;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+input,
+input::placeholder,
+textarea,
+textarea::placeholder {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: $white-color-3;
+}
+
+input:focus,
+textarea:focus {
+    border-color: $white-color-3;
+}

@@ -1,0 +1,21 @@
+@import "title/responsive";
+@import "description/responsive";
+@import "item/responsive";
+
+.contacts {
+    @include respond-to(devices) {
+        margin-top: 20px;
+    }
+
+    &-item {
+        @include contacts-item-responsive;
+    }
+
+    &-title {
+        @include contacts-title-responsive;    
+    }
+
+    &-description {
+        @include contacts-description-responsive;
+    }
+}

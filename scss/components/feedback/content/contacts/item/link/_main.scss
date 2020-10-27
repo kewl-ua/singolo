@@ -1,0 +1,28 @@
+%contacts-link-base {
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+        @include prefix(transform, translateY(-50%));
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+}
+
+@mixin contacts-link() { 
+    &-address {
+        @extend %contacts-link-base;
+        @include icon-marker($white-color-3, inherit);
+    }
+
+    &-phone {
+        @extend %contacts-link-base;
+        @include icon-phone($white-color-3, inherit);
+    }
+
+    &-email {
+        @extend %contacts-link-base;
+        @include icon-mail($white-color-3, inherit);
+    }
+}
