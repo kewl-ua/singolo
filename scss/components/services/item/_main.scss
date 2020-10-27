@@ -10,12 +10,12 @@
     }
 
     &::before {
+        padding: 15px;
         position: absolute;
         top: 0;
         left: 0;
         border: 2px solid $blue-color-1;
         border-radius: 50%;
-        padding: 15px;
     }
 
     &-bubble {

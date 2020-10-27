@@ -1,10 +1,10 @@
 @mixin portfolio-list() {
-    margin-top: 18px;
     position: relative;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-left: -20px;
     align-items: flex-start;
+    margin-top: 18px;
+    margin-left: -20px;
     padding-top: 40px;
 }

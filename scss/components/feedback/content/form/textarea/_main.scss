@@ -1,7 +1,7 @@
 @mixin feedback-textarea() {
     height: 202px;
+    margin-top: 18px;
     color: $red-color-4;
     background-color: $red-color-2;
-    margin-top: 18px;
     @include prefix(resize, none);
 }

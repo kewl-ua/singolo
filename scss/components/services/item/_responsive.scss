@@ -2,7 +2,7 @@
     @include respond-to(devices) {
         width: calc(50% - 20px);
 
-        /* TODO: reimplement */
+        /* Reseting desktop nth rule margins */
         &:nth-child(3n - 2) {
             margin-left: 10px;
         }
@@ -17,17 +17,19 @@
         padding-top: 100px;
         padding-left: 0;
 
+        /* Reseting desktop nth rule margins */
         &:nth-child(3n - 2) {
             margin-left: 0;
-        }
 
+        }
+        /* Reseting tablets nth rule margins */
         &:nth-child(2n - 1) {
             margin-left: 0;
         }
 
         &::before {
             left: 50%;
-            transform: translate(-50%, 0%);
+            @include prefix(transform, translateX(-50%));
         }
 
         &-bubble {

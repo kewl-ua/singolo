@@ -97,7 +97,7 @@
 @media only screen and (min-width: 320px) and (max-width: 939px) {
   .services-item {
     width: calc(50% - 20px);
-    /* TODO: reimplement */
+    /* Reseting desktop nth rule margins */
   }
   .services-item:nth-child(3n-2) {
     margin-left: 10px;
@@ -111,6 +111,8 @@
     width: 100%;
     padding-top: 100px;
     padding-left: 0;
+    /* Reseting desktop nth rule margins */
+    /* Reseting tablets nth rule margins */
   }
   .services-item:nth-child(3n-2) {
     margin-left: 0;
@@ -120,7 +122,11 @@
   }
   .services-item::before {
     left: 50%;
-    transform: translate(-50%, 0%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .services-item-bubble::before {
     content: "";
