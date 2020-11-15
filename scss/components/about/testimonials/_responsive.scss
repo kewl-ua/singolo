@@ -1,11 +1,13 @@
-@import "testimonials/responsive";
 @import "testimonial/responsive";
 @import "name/responsive";
 @import "info/responsive";
 @import "socials/responsive";
 
 .testimonials {
-	@include testimonials-responsive;
+	@include respond-to(mobiles) {
+		flex-direction: column;
+		padding-top: 40px;
+	}
 }
 
 .testimonial {

@@ -1,4 +1,3 @@
-@import "testimonials/main";
 @import "testimonial/main";
 @import "image/main";
 @import "name/main";
@@ -8,7 +7,9 @@
 @import "link/main";
 
 .testimonials {
-	@include testimonials;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
 }
 
 .testimonial {
