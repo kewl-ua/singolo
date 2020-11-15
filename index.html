@@ -105,57 +105,80 @@
                         Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                     </p>
 
-                    <div class="portfolio-list">
-                        <input type="radio" id="all" name="button" value="all" class="portfolio-input" checked>
-                        <input type="radio" id="web-design" name="button" value="web-design"
-                            class="portfolio-input">
-                        <input type="radio" id="graphic-design" name="button" value="graphic-design" 
-                            class="portfolio-input">
-                        <input type="radio" id="artwork" name="button" value="artwork" class="portfolio-input">
+                    <input class="portfolio-filter" type="radio" id="filter-all" name="filter" value="all" checked>
+                    <label class="portfolio-control active" for="filter-all">All</label>
+                    
+                    <input class="portfolio-filter" type="radio" id="filter-web" name="filter" value="web">
+                    <label class="portfolio-control" for="filter-web">Web Design</label>
 
-                        <label for="all" class="portfolio-control all active">All</label>
-                        <label for="web-design" class="portfolio-control web-design">Web Design</label>
-                        <label for="graphic-design" class="portfolio-control graphic-design">
-                            Graphic Design</label>
-                        <label for="artwork" class="portfolio-control artwork">Artwork</label>
+                    <input class="portfolio-filter" type="radio" id="filter-graphic" name="filter" value="graphic">
+                    <label class="portfolio-control" for="filter-graphic">Graphic Design</label>
 
-                        <div class="portfolio-item web-design">
-                            <img src="images/portfolio_1.jpg" alt="Portfolio example 1" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item web-design">
-                            <img src="images/portfolio_2.jpg" alt="Portfolio example 2" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item web-design">
-                            <img src="images/portfolio_3.jpg" alt="Portfolio example 3" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item web-design">
-                            <img src="images/portfolio_4.jpg" alt="Portfolio example 4" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item graphic-design">
-                            <img src="images/portfolio_5.jpg" alt="Portfolio example 5" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item graphic-design">
-                            <img src="images/portfolio_6.jpg" alt="Portfolio example 6" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item graphic-design">
-                            <img src="images/portfolio_7.jpg" alt="Portfolio example 7" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item graphic-design">
-                            <img src="images/portfolio_8.jpg" alt="Portfolio example 8" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item artwork">
-                            <img src="images/portfolio_9.jpg" alt="Portfolio example 9" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item artwork">
-                            <img src="images/portfolio_10.jpg" alt="Portfolio example 10" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item artwork">
-                            <img src="images/portfolio_11.jpg" alt="Portfolio example 11" class="portfolio-image">
-                        </div>
-                        <div class="portfolio-item artwork">
-                            <img src="images/portfolio_12.jpg" alt="Portfolio example 12" class="portfolio-image">
-                        </div>
-                    </div>
+                    <input class="portfolio-filter" type="radio" id="filter-artwork" name="filter" value="artwork">
+                    <label class="portfolio-control" for="filter-artwork">Artwork</label>
+
+                    <ul class="portfolio-list">
+                        <li class="portfolio-item web">
+                            <a href="#" class="portfolio-link ">
+                                <img src="images/portfolio_1.jpg" alt="Porftolio example 1" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item web">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_2.jpg" alt="Porftolio example 2" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item web">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_3.jpg" alt="Porftolio example 3" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item web">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_4.jpg" alt="Porftolio example 4" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item graphic">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_5.jpg" alt="Porftolio example 5" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item graphic">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_6.jpg" alt="Porftolio example 6" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item graphic">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_7.jpg" alt="Porftolio example 7" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item graphic">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_8.jpg" alt="Porftolio example 8" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item artwork">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_9.jpg" alt="Porftolio example 9" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item artwork">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_10.jpg" alt="Porftolio example 10" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item artwork">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_11.jpg" alt="Porftolio example 11" class="portfolio-image">
+                            </a>
+                        </li>
+                        <li class="portfolio-item artwork">
+                            <a href="#" class="portfolio-link">
+                                <img src="images/portfolio_12.jpg" alt="Porftolio example 12" class="portfolio-image">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>  
             

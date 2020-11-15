@@ -1,15 +1,6 @@
 @mixin portfolio-description() {
     @include font(1.8rem, 300);
+
     margin-top: 24px;
     color: $blue-color-4;
-    letter-spacing: -0.02rem;
-    line-height: 1.875rem;
-
-    @media only screen and (min-width: $mobile-portrait) and (max-width: $tablet - 1) {
-        line-height: 2.2rem;
-    }
-
-    @media only screen and (min-width: $mobile-landscape) and (max-width: $tablet - 1) {
-        line-height: 2.2rem;
-    }
 }

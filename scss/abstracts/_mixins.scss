@@ -18,10 +18,11 @@
     #{$property}: #{$value};
 }
 
-@mixin font($size: $global-font-size, $weight: normal, $style: normal) {
+@mixin font($size: $global-font-size, $weight: normal, $style: normal, $line-height: normal) {
     font-size: $size;
     font-weight: $weight;
     font-style: $style;
+    line-height: $line-height;
 }
 
 @mixin box-shadow($top: 0, $left: 0, $spread: 10px, $blur: 4px, $color: transparent, $inset: false) {
@@ -31,6 +32,23 @@
     @else {
         @include prefix(box-shadow, $top $left $spread $blur $color);
     }
+}
+
+@mixin clearfix() {
+    &::after {
+        content: "";
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+}
+
+@mixin visually-hidden() {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 @mixin respond-to($device) {

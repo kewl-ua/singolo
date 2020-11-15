@@ -1,0 +1,55 @@
+@mixin portfolio-filter() {
+    @include visually-hidden;
+
+    &:checked + .portfolio-control {
+        color: $white-color-1;
+        border-color: $white-color-1;
+    }
+
+    @at-root {
+        #filter-all:checked {
+            & ~ .portfolio-list .portfolio-item {
+                display: block;
+            }
+        }
+
+        #filter-web:checked {
+            & ~ .portfolio-list .portfolio-item {
+                &.web {
+                    display: block;
+                }
+
+                &.graphic,
+                &.artwork {
+                    display: none;;
+                }
+            }
+        }
+
+        #filter-graphic:checked {
+            & ~ .portfolio-list .portfolio-item {
+                &.graphic {
+                    display: block;
+                }
+
+                &.web,
+                &.artwork {
+                    display: none;;
+                }
+            }
+        }
+
+        #filter-artwork:checked {
+            & ~ .portfolio-list .portfolio-item {
+                &.artwork {
+                    display: block;
+                }
+
+                &.web,
+                &.graphic {
+                    display: none;;
+                }
+            }
+        }
+    }
+}

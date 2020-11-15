@@ -1,0 +1,11 @@
+@import "link/main";
+
+@mixin portfolio-item() {
+    width: calc(25% - 15px);
+    margin: 20px 0 0 20px;
+    float: left;
+
+    &:nth-child(4n-3) {
+        margin-left: 0;
+    }
+}

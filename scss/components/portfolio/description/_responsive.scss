@@ -1,5 +1,0 @@
-@mixin portfolio-description-responsive() {
-	@include respond-to(mobiles) {
-		margin: 24px 0;
-	}
-}

@@ -1,9 +1,7 @@
 html {
     font-size: $global-font-size;
-}
-
-body {
     font-family: $global-font-family;
+    scroll-behavior: smooth;
 }
 
 input {
@@ -17,7 +15,6 @@ textarea {
 
 input,
 textarea {
-    font-family: inherit;
     padding: 15px;
     color: $red-color-4;
     border: 2px solid transparent;

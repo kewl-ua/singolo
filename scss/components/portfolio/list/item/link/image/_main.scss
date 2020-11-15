@@ -1,9 +1,11 @@
 @mixin portfolio-image() {
     @include prefix(transition, transform 1s ease-out);
+
+    display: block;
     width: 100%;
     height: 100%;
 
     &:hover {
-        @include prefix(transform, scale(1.3));
+        @include prefix(transform, scale(1.25));
     }
 }
