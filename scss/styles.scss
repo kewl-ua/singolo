@@ -6,15 +6,15 @@
 @import "base/tags";
 
 /* General components */
-@import "components/icon";
-@import "components/title";
+@import "components/icon/main";
+@import "components/title/main";
 @import "components/socials/main";  
 
 /* Layout components */
-@import "components/header/main";
-@import "components/banner/main";
-@import "components/services/main";
-@import "components/portfolio/main";
-@import "components/about/main";
-@import "components/feedback/main";
-@import "components/footer/main";
+@import "layout/header/main";
+@import "layout/banner/main";
+@import "layout/services/main";
+@import "layout/portfolio/main";
+@import "layout/about/main";
+@import "layout/feedback/main";
+@import "layout/footer/main";
