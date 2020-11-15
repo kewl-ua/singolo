@@ -1,0 +1,6 @@
+@mixin portfolio-control-responsive() {
+    @include respond-to(mobiles) {
+        padding: 5px 10px;
+        font-size: 1.5rem;
+    }
+}

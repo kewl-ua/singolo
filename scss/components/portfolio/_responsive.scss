@@ -1,0 +1,22 @@
+@import "list/responsive";
+@import "control/responsive";
+
+.portfolio {
+    &-inner {
+        @include respond-to(mobiles) {
+            text-align: center;
+        }
+    }
+
+    &-list {
+        @include portfolio-list-responsive;
+    }
+
+    &-item {
+        @include portfolio-item-responsive;
+    }
+
+    &-control {
+        @include portfolio-control-responsive;
+    }
+}
