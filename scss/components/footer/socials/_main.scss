@@ -1,3 +1,5 @@
-@import "socials";
-@import "social";
-@import "link";
+@import "social/main";
+
+@mixin footer-socials() {
+    @include social-list;
+}
