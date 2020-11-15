@@ -1,3 +1,8 @@
+@import "image/main";
+@import "name/main";
+@import "info/main";
+@import "socials/main";
+
 @mixin testimonial() {
 	display: flex;
 	width: calc((100% - 40px) / 3);

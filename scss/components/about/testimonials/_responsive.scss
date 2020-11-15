@@ -1,7 +1,4 @@
 @import "testimonial/responsive";
-@import "name/responsive";
-@import "info/responsive";
-@import "socials/responsive";
 
 .testimonials {
 	@include respond-to(mobiles) {

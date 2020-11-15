@@ -1,3 +1,7 @@
+@import "name/responsive";
+@import "info/responsive";
+@import "socials/responsive";
+
 @mixin testimonial-responsive() {
 	@include respond-to(mobiles) {
 		width: 100%;
