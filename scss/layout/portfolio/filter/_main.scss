@@ -2,8 +2,8 @@
     @include visually-hidden;
 
     &:checked + .portfolio-control {
-        color: $white-color-1;
-        border-color: $white-color-1;
+        color: $white-1;
+        border-color: $white-1;
     }
 
     @at-root {

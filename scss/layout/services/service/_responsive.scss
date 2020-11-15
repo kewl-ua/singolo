@@ -29,27 +29,27 @@
         }
 
         &-bubble {
-            @include icon-bubble($blue-color-1, 5rem);
+            @include icon-bubble($blue-1, 5rem);
         }
     
         &-bulb {
-            @include icon-bulb($blue-color-1, 5rem);
+            @include icon-bulb($blue-1, 5rem);
         }
     
         &-heart {
-            @include icon-heart($blue-color-1, 5rem);
+            @include icon-heart($blue-1, 5rem);
         }
     
         &-pen {
-            @include icon-pen($blue-color-1, 5rem);
+            @include icon-pen($blue-1, 5rem);
         }
     
         &-phone {
-            @include icon-phone($blue-color-1, 5rem);
+            @include icon-phone($blue-1, 5rem);
         }
     
         &-star {
-            @include icon-star($blue-color-1, 5rem);
+            @include icon-star($blue-1, 5rem);
         }
     }
 }

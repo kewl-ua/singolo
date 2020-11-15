@@ -1,9 +1,9 @@
 @import "logo/main";
 
 .header {
-    background: $blue-color-2;
-    color: $white-color-1;
-    border-bottom: 6px solid $blue-color-3;
+    background: $blue-2;
+    color: $white-1;
+    border-bottom: 6px solid $blue-3;
 
     &-inner {
         @include site-width;

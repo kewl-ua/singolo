@@ -5,8 +5,8 @@
 @import "list/main";
 
 .portfolio {
-    background: $blue-color-2;
-    border-bottom: 6px solid $blue-color-3;
+    background: $blue-2;
+    border-bottom: 6px solid $blue-3;
 
     &-inner {
         @include site-width;

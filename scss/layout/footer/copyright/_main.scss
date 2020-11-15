@@ -1,8 +1,8 @@
 @mixin footer-copyright() {
     @include font(1.2rem);
-    color: $blue-color-1;
+    color: $blue-1;
 
     &-link:hover {
-        color: $white-color-1;
+        color: $white-1;
     }
 }

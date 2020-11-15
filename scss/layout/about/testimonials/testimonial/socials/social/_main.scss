@@ -1,5 +1,5 @@
 @import "link/main";
 
 @mixin testimonials-social() {
-	@include social-item($blue-color-1);
+	@include social-item($blue-1);
 }

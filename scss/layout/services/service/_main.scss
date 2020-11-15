@@ -14,31 +14,31 @@
         position: absolute;
         top: 0;
         left: 0;
-        border: 2px solid $blue-color-1;
+        border: 2px solid $blue-1;
         border-radius: 50%;
     }
 
     &-bubble {
-        @include icon-bubble($blue-color-1, 3.2rem);
+        @include icon-bubble($blue-1, 3.2rem);
     }
 
     &-bulb {
-        @include icon-bulb($blue-color-1, 3.2rem);
+        @include icon-bulb($blue-1, 3.2rem);
     }
 
     &-heart {
-        @include icon-heart($blue-color-1, 3.2rem);
+        @include icon-heart($blue-1, 3.2rem);
     }
 
     &-pen {
-        @include icon-pen($blue-color-1, 3.2rem);
+        @include icon-pen($blue-1, 3.2rem);
     }
 
     &-phone {
-        @include icon-phone($blue-color-1, 3.2rem);
+        @include icon-phone($blue-1, 3.2rem);
     }
 
     &-star {
-        @include icon-star($blue-color-1, 3.2rem);
+        @include icon-star($blue-1, 3.2rem);
     }
 }

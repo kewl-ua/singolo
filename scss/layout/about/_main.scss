@@ -2,8 +2,8 @@
 @import "description/main";
 
 .about {
-	background-color: $white-color-2;
-	border-bottom: 6px solid $white-color-1;
+	background-color: $white-2;
+	border-bottom: 6px solid $white-1;
 
 	&-inner {
 		@include site-width;

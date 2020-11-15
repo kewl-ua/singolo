@@ -1,9 +1,9 @@
 @mixin feedback-input() {
     width: 620px;
-    background-color: $red-color-2;
+    background-color: $red-2;
 
     &:focus {
-        border-color: $white-color-3;
+        border-color: $white-3;
     }
 
     & + & {

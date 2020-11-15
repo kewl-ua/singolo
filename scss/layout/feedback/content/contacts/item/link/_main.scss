@@ -13,16 +13,16 @@
 @mixin contacts-link() { 
     &-address {
         @extend %contacts-link-base;
-        @include icon-marker($white-color-3, inherit);
+        @include icon-marker($white-3, inherit);
     }
 
     &-phone {
         @extend %contacts-link-base;
-        @include icon-phone($white-color-3, inherit);
+        @include icon-phone($white-3, inherit);
     }
 
     &-email {
         @extend %contacts-link-base;
-        @include icon-mail($white-color-3, inherit);
+        @include icon-mail($white-3, inherit);
     }
 }

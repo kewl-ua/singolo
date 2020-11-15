@@ -16,7 +16,7 @@ textarea {
 input,
 textarea {
     padding: 15px;
-    color: $red-color-4;
+    color: $red-4;
     border: 2px solid transparent;
     border-radius: 5px;
     outline: none;
@@ -32,10 +32,10 @@ textarea::placeholder {
 
 input::placeholder,
 textarea::placeholder {
-    color: $white-color-3;
+    color: $white-3;
 }
 
 input:focus,
 textarea:focus {
-    border-color: $white-color-3;
+    border-color: $white-3;
 }
