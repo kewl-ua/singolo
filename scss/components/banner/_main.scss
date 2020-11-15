@@ -1,7 +1,7 @@
 .banner {
 	position: relative;
 	border-bottom: 6px solid $red-color-3;
-	background: url(../images/phones-min.png) center/80% no-repeat $red-color-5;
+	background: center/80% no-repeat $red-color-5;
 
 	&::before {
 		content: "";
