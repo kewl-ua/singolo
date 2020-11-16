@@ -5,7 +5,11 @@
 /* Vertically oriented phone */
 /* Horizontally oriented phone */
 /* Vertically oritented tablet */
-/* Mixin library for general purposes */
+/* General purpose mixins */
+/*
+    The element is not rendered on screen, but exposed in the accessibility tree,
+    and still accessible to keyboard navigation.
+*/
 /* General components */
 /* Layout components */
 .nav {
