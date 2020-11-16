@@ -1,4 +1,4 @@
-/* Mixin library for general purposes */
+/* General purpose mixins */
 @mixin site-width($width: $global-site-width) {
     max-width: $width;
     margin: 0 auto;
@@ -51,6 +51,10 @@
     }
 }
 
+/*
+    The element is not rendered on screen, but exposed in the accessibility tree,
+    and still accessible to keyboard navigation.
+*/
 @mixin visually-hidden() {
     position: absolute;
     clip: rect(0 0 0 0);
