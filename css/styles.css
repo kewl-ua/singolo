@@ -131,7 +131,7 @@ textarea:focus {
 .header-inner {
   max-width: 940px;
   margin: 0 auto;
-  /* 320px - 480px */
+  /* 320px - 479px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
@@ -206,7 +206,7 @@ textarea:focus {
 .services-inner {
   max-width: 940px;
   margin: 0 auto;
-  /* 320px - 480px */
+  /* 320px - 479px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
@@ -367,7 +367,7 @@ textarea:focus {
 .portfolio-inner {
   max-width: 940px;
   margin: 0 auto;
-  /* 320px - 480px */
+  /* 320px - 479px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
@@ -493,7 +493,7 @@ textarea:focus {
 .about-inner {
   max-width: 940px;
   margin: 0 auto;
-  /* 320px - 480px */
+  /* 320px - 479px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
@@ -738,7 +738,7 @@ textarea:focus {
 .feedback-inner {
   max-width: 940px;
   margin: 0 auto;
-  /* 320px - 480px */
+  /* 320px - 479px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
@@ -791,6 +791,13 @@ textarea:focus {
   color: #f48c8f;
   background-color: #ca4549;
 }
+.feedback-submit {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .footer {
   background-color: #303441;
@@ -798,7 +805,7 @@ textarea:focus {
 .footer-inner {
   max-width: 940px;
   margin: 0 auto;
-  /* 320px - 480px */
+  /* 320px - 479px */
   /* 480px - 767 px */
   /* 320px - 767 px */
   /* 768px - 1019px */
