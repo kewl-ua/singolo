@@ -1,6 +1,6 @@
 @mixin service-description() {
+    @include font(1.2rem, auto, auto, 2rem);
+    @include prefix(hyphens, auto);
+
     margin-top: 10px;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    hyphens: auto;
 }

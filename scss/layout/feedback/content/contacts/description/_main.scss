@@ -1,5 +1,6 @@
 @mixin contacts-description() {
+    @include font(1.2rem, normal, normal, 2.5rem);
+
     margin-top: 15px;
     font-size: 1.2rem;
-    line-height: 2.5rem;
 }

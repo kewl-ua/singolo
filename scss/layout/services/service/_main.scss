@@ -10,10 +10,9 @@
     }
 
     &::before {
+        @include position(absolute, 0, auto, auto, 0);
+
         padding: 15px;
-        position: absolute;
-        top: 0;
-        left: 0;
         border: 2px solid $blue-1;
         border-radius: 50%;
     }

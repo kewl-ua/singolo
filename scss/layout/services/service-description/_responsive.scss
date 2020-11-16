@@ -1,6 +1,5 @@
 @mixin service-description-responsive() {
     @include respond-to(devices) {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
+        @include font(1.5rem, auto, auto, 2.5rem);
     }
 }

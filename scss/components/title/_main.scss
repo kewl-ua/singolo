@@ -1,4 +1,5 @@
 @mixin title($color: $blue-1) {
     @include font(3rem, 900);
+
     color: $color;
 }

@@ -25,6 +25,7 @@
 
         &::before {
             @include prefix(transform, translateX(-50%));
+
             left: 50%;
         }
 

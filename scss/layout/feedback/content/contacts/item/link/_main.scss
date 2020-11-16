@@ -3,10 +3,8 @@
     position: relative;
 
     &::before {
+        @include position(absolute, 50%, auto, auto, 0);
         @include prefix(transform, translateY(-50%));
-        position: absolute;
-        left: 0;
-        top: 50%;
     }
 }
 

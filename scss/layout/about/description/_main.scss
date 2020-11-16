@@ -1,6 +1,6 @@
 @mixin about-description() {
-	@include font(1.8rem, 300);
-	color: $blue-3;
+	@include font(1.8rem, 300, normal, 3rem);
+
 	margin-top: 25px;
-	line-height: 3rem;
+	color: $blue-3;
 }
