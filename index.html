@@ -276,11 +276,12 @@
                     </p>
                     
                     <div class="feedback-content">
-                        <form class="feedback-form">
+                        <form class="feedback-form" method="POST" action="/feedback.php">
                             <input class="feedback-input" type="text" placeholder="Name (Required)">
                             <input class="feedback-input" type="email" placeholder="Email (Required)">
                             <input class="feedback-input" type="text" placeholder="Subject">
                             <textarea class="feedback-textarea" placeholder="Describe your project in detail..."></textarea>
+                            <input class="feedback-submit" type="submit">
                         </form>
                         
                         <div class="contacts">
