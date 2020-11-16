@@ -1,17 +1,7 @@
 @mixin portfolio-control() {
-    display: inline-block;
-    padding: 3px 6px;
-    margin-top: 15px;
-    border: 1px solid $blue-4;
-    border-radius: 3px;
-    font-size: 1.2rem;
-    color: $blue-1;
+    @include button($blue-1, $blue-4);
 
-    &:hover {
-        cursor: pointer;
-        color: $white-1;
-        border-color: $white-1;
-    }
+    margin-top: 15px;
 
     &:not(:first-of-type) {
         margin-left: 10px;

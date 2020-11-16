@@ -1,0 +1,14 @@
+@mixin button($color: $blue-1, $border-color: currentColor) {
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    color: $color;
+
+    &:hover {
+        cursor: pointer;
+        color: $white-1;
+        border-color: $white-1;
+    }
+}
