@@ -35,4 +35,8 @@
     &-textarea {
         @include feedback-textarea;
     }
+
+    &-submit {
+        @include feedback-submit;
+    }
 }
